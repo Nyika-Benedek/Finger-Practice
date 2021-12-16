@@ -1,0 +1,62 @@
+* {
+    --themeColor: green;
+}
+
+body {
+    background-color: lightblue;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    background-color: var(--themeColor);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    left: 0;
+    height: auto;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+/*
+.slopingFrame::before {
+    position: absolute;
+    border-top: 10% solid var(--headerColor);
+    border-left: 10% solid var(--divColor);
+}
+
+.slopingFrame::after {
+    position: absolute;
+    border-top: var(--headerColor);
+    border-right: var(--divColor);
+}
+*/
+
+.slopingFrame {
+    position: relative;
+    height: inherit;
+    padding: 0.5rem;
+    background-color: wheat;
+
+}
+
+.slopingFrame::after {
+    
+    position: absolute;
+    left: 10rem;
+    border-top: 100px solid white;
+    border-right: 100px solid transparent;
+}
+
+.title {
+    color: var(--themeColor);
+}
+
+.displayByRows {
+    display: block;
+}

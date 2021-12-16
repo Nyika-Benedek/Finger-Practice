@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+}
+
+.alertDiv {
+    color: white;
+    background-color: green;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: fit-content;
+}
+
+.alert {
+ font-weight: bold;
+}

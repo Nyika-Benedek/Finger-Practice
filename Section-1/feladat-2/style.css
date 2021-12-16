@@ -1,5 +1,6 @@
-body {
-    text-align: center;
+html, body {
+    margin: 0;
+    height: 100%;
 }
 
 .alertDiv {
@@ -9,8 +10,14 @@ body {
     padding: 1rem;
     border-radius: 1rem;
     width: fit-content;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .alert {
  font-weight: bold;
 }
+

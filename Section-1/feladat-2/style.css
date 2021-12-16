@@ -21,3 +21,28 @@ html, body {
  font-weight: bold;
 }
 
+.button {
+    border: 1px solid white;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+}
+
+#buttonMegse {
+    color: white;
+    background-color: gray;
+}
+
+#buttonMegse:hover {
+    background-color: darkgray;
+}
+
+#buttonDelete {
+    background-color: red;
+}
+
+#buttonDelete:hover {
+    background-color: lightcoral;
+}

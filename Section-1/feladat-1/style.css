@@ -3,7 +3,6 @@
 }
 
 body {
-    background-color: lightblue;
     margin: 0;
     text-align: center;
 }
@@ -25,34 +24,31 @@ div {
     margin: auto;
 }
 
-/*
-.slopingFrame::before {
-    position: absolute;
-    border-top: 10% solid var(--headerColor);
-    border-left: 10% solid var(--divColor);
-}
-
-.slopingFrame::after {
-    position: absolute;
-    border-top: var(--headerColor);
-    border-right: var(--divColor);
-}
-*/
-
 .slopingFrame {
     position: relative;
     height: inherit;
     padding: 0.5rem;
-    background-color: wheat;
+    background-color: white;
+    display: inline;
 
 }
 
-.slopingFrame::after {
-    
+.slopingFrame::before {
+    top: 0;
+    content: " ";
     position: absolute;
-    left: 10rem;
-    border-top: 100px solid white;
-    border-right: 100px solid transparent;
+    left: -1.5rem;
+    border-top: 2.2rem solid transparent;
+    border-right: 1.5rem solid white;
+}
+
+.slopingFrame::after {
+    top: 0;
+    content: " ";
+    position: absolute;
+    left: 90%;
+    border-top: 2.2rem solid white;
+    border-right: 1.5rem solid transparent;
 }
 
 .title {
@@ -71,4 +67,5 @@ div {
     border-radius: 1rem;
     border: 1px solid var(--themeColor);
     padding-left: 0.5rem;
+    color: rgb(0, 206, 0);
 }

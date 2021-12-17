@@ -8,9 +8,65 @@
 
 .bigProfile {
     grid-area: bigProfile;
+    margin: auto;
+    background-color: green;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    padding-bottom: 0;
+}
+
+.bigProfilePic {
+    height: 15rem;
+    border-top-right-radius: 5rem;
+    border-top-left-radius: 5rem;
+    /*background-color: green;*/
+}
+
+.bigProfile p {
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    height: min-content;
+    text-align: center;
 }
 
 .smallProfile {
     grid-area: smallProfile;
+    margin: auto;
+
+    height: 6rem;
+    position: relative;
+    background-color: green;
+    text-align: center;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
+.smallProfilePic {
+    height: 5rem;
+    border-radius: 100%;
+    margin-top: -2rem;
+    margin-bottom: 0;
+    padding: 0;
+    border: 2px solid green;
+}
+
+.name, .rank {
+    color: white;
+    font-size: larger;
+}
+
+.name{
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.rank{
+    margin: 0;
+    margin-bottom: 1px;
+    padding: 0;
+}

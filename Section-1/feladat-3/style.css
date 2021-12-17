@@ -5,10 +5,10 @@ html, body {
 
 .gridContainer {
     display: grid;
-    grid-template-columns: 1fr 5fr 3fr 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr 5fr 3fr 2fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
-    "img title date button1 button2 button3 button3";
+    "img title date buttonGrid";
     /*
     position: absolute;
     top: 50%;
@@ -16,3 +16,35 @@ html, body {
     transform: translate(-50%, -50%);*/
 }
 
+.img {
+    grid-area: img;
+    margin: auto;
+}
+
+.title {
+    grid-area: title;
+    margin: auto;
+    font-weight: bold;
+}
+
+.date {
+    grid-area: date;
+    margin: auto;
+}
+
+.buttonGrid {
+    grid-area: buttonGrid;
+    margin: auto;
+}
+
+#b1, #b3, #b4 {
+    background-color: green;
+    border-radius: 100%;
+    border: none;
+}
+
+#b2 {
+    background-color: orange;
+    border-radius: 100%;
+    border: none;
+}

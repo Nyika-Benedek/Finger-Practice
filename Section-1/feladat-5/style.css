@@ -1,0 +1,31 @@
+html, body {
+    height: 90%;
+    position: relative;
+}
+
+.list {
+    background-color: darkgray;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    width: 20%;
+    padding: 1rem;
+    padding-left: 6%;
+    border-radius: 3rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.isFirstChild:first-child {
+    position: absolute;
+    background-color: rgb(72, 214, 72);
+    padding: 1rem;
+    margin: 0;
+    top: 0;
+    left: -2%;
+    border-radius: 3rem;
+    /*transform: translate(-50%,-50%);*/
+}

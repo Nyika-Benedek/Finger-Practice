@@ -1,0 +1,18 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 5fr 3fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "img title date button1 button2 button3 button3";
+    /*
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+}
+

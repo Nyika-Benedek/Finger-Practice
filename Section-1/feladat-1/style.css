@@ -52,6 +52,7 @@ div {
 }
 
 .title {
+    font-weight: bold;
     color: var(--themeColor);
     margin: 0;
     margin-top: 1rem;
@@ -61,11 +62,13 @@ div {
 
 .displayByRows {
     display: block;
+    width: fit-content;
 }
 
 .fancyInput {
+    padding: 0.3rem;
     border-radius: 1rem;
-    border: 1px solid var(--themeColor);
+    border: 0.6px solid var(--themeColor);
     padding-left: 0.5rem;
     color: rgb(0, 206, 0);
 }

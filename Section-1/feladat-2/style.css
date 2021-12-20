@@ -5,7 +5,7 @@ html, body {
 
 .alertDiv {
     color: white;
-    background-color: green;
+    background-color: rgb(0,102,51);
     text-align: center;
     padding: 1rem;
     border-radius: 1rem;
@@ -36,11 +36,11 @@ html, body {
 }
 
 #buttonMegse:hover {
-    background-color: darkgray;
+    background-color: lightgray;
 }
 
 #buttonDelete {
-    background-color: red;
+    background-color: rgb(239, 58, 67);
 }
 
 #buttonDelete:hover {

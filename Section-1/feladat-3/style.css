@@ -18,7 +18,8 @@ html, body {
 
 .img {
     grid-area: img;
-    margin: auto;
+    margin: 0;
+
 }
 
 .title {
@@ -38,13 +39,31 @@ html, body {
 }
 
 #b1, #b3, #b4 {
-    background-color: green;
-    border-radius: 100%;
+    color: white;
+    background-color: rgb(0, 102, 51);
+    border-radius: 50%;
     border: none;
+    padding: auto;
+    width: 58px;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+#b1:hover, #b3:hover, #b4:hover {
+    background-color: lightgreen;
 }
 
 #b2 {
-    background-color: orange;
+    color: white;
+    background-color: rgb(223, 126, 36);
     border-radius: 100%;
     border: none;
+    padding: auto;
+    width: 58px;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+#b2:hover {
+    background-color: rgb(251, 255, 0);
 }

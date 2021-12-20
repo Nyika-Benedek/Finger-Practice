@@ -4,3 +4,89 @@ html, body {
     color: white;
 }
 
+.divBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    background-color: green;
+    border-radius: 1rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width:fit-content;
+}
+
+.title {
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 0;
+}
+
+.inputText {
+    margin: 0;
+    margin-top: 0.5rem;
+    border: 1px solid lightgreen;
+    border-radius: 2px;
+    padding: 0.2rem;
+    width: 97%;
+}
+
+.inputCheckBox {
+    background: green;
+}
+
+#checkb {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background: green;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid white;
+    border-radius: 2px;
+    position: relative;
+    top: 3px;
+}
+
+#checkb:checked::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '\2713';
+}
+
+.link {
+    color: white;
+}
+
+.bigButton {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+    background-color: rgb(43, 202, 43);
+    width: fit-content;
+    padding: 0.6rem;
+    border-radius: 3rem;
+    font-size: large;
+
+    border: none;
+    box-shadow: 0 1px 3px 0.2px black;
+}
+
+.bigButton {
+    cursor: pointer;
+}
+
+.bigButton:active {
+    background-color: rgb(35, 163, 35);
+}

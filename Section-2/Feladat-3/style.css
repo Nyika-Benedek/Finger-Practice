@@ -13,5 +13,19 @@ body, html {
 
 .header {
     background-color: var(--color);
-    height: 3rem;
+    height: 3.5rem;
+}
+
+.icon {
+    margin: auto;
+    padding: auto;
+}
+
+
+.gridContainer {
+    position: relative;
+    top: 20px;
+    display: grid;
+    grid-template-columns: 3rem 5rem repeat(7, minmax(50px, auto)) 3rem;
+    grid-template-rows: 1fr;
 }

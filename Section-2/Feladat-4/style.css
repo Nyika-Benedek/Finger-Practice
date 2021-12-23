@@ -1,0 +1,21 @@
+* {
+    --color: rgb(0,102,51);
+    --color2: rgb(85, 174, 58);
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color: white;
+}
+
+.box {
+    background-color: var(--color2);
+    position: relative;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

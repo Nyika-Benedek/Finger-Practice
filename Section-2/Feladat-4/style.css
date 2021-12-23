@@ -1,6 +1,7 @@
 * {
     --color: rgb(0,102,51);
     --color2: rgb(85, 174, 58);
+    --colorHover: rgb(186, 200, 53);
 }
 
 body, html {
@@ -38,12 +39,6 @@ body, html {
     width: fit-content;
 }
 
-.symbol {
-    padding: 1rem;
-    background-color: var(--color);
-    border-radius: 50%;
-}
-
 .smallbg {
     background-color: var(--color);
     padding: 0.2rem;
@@ -75,4 +70,28 @@ body, html {
 
 .bg {
     color: var(--color);
+}
+
+#d1:hover > .bg {
+    color: var(--colorHover);
+}
+
+#d2:hover > .bg {
+    color: var(--colorHover);
+}
+
+#d3:hover > .bg {
+    color: var(--colorHover);
+}
+
+#d4:hover > .bg {
+    color: var(--colorHover);
+}
+
+#d5:hover > .bg {
+    color: var(--colorHover);
+}
+
+#d6:hover > .bg {
+    color: var(--colorHover);
 }

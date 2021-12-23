@@ -14,8 +14,65 @@ body, html {
 .box {
     background-color: var(--color2);
     position: relative;
-    display: block;
+    display: inline-block;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 20%;
+    height: max-content;
+    border-radius: 10%;
+}
+
+.img {
+    position: relative;
+    margin: auto;
+    margin-left: 50%;
+    margin-top: 3px;
+    transform: translate(-50%);
+    border-radius: 50%;
+    width: 33%;
+}
+
+.name {
+    margin: auto;
+    width: fit-content;
+}
+
+.symbol {
+    padding: 1rem;
+    background-color: var(--color);
+    border-radius: 50%;
+}
+
+.smallbg {
+    background-color: var(--color);
+    padding: 0.2rem;
+    border-radius: 50%;
+}
+
+.workPlace {
+    margin: auto;
+    width: fit-content;
+}
+
+.bs {
+    margin: auto;
+    width: 85%;
+}
+
+.buttonContainer {
+    text-align: center;
+    position: relative;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    overflow: auto;
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(20px, 50px));
+    grid-template-rows: 1fr;
+}
+
+.bg {
+    color: var(--color);
 }

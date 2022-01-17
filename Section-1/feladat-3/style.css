@@ -21,7 +21,7 @@ html, body {
     100% {background-color: lightsalmon;}
 }
 
-.gridContainer {
+.grid-Container {
     display: grid;
     grid-template-columns: 1fr 5fr 3fr 2fr;
     grid-template-rows: 1fr;
@@ -65,7 +65,7 @@ html, body {
     font-size: 28px;
 }
 
-.buttonGrid {
+.button-Grid {
     grid-area: buttonGrid;
     margin: auto;
 }

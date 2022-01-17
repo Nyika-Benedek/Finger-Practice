@@ -1,6 +1,24 @@
+* {
+    --theme-Color: #006633;
+    --orange: #DF7E24;
+}
+
 html, body {
+    position: relative;
     margin: 0;
     height: 100%;
+
+    
+}
+
+@keyframes button1-Animation {
+    0%   {background-color: var(--theme-Color);}
+    100% {background-color: lightgreen;}
+  }
+
+@keyframes button2-Animation {
+    0%   {background-color: var(--orange);}
+    100% {background-color: lightsalmon;}
 }
 
 .gridContainer {
@@ -9,28 +27,42 @@ html, body {
     grid-template-rows: 1fr;
     grid-template-areas: 
     "img title date buttonGrid";
-    /*
-    position: absolute;
+    
+    width: 100%;
+    height: 120px;
+    position: relative;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);*/
+    transform: translate(0, -50%);
 }
 
 .img {
     grid-area: img;
     margin: 0;
-
+    padding: 0;
+    height: 120px;
 }
 
 .title {
     grid-area: title;
+    width: 100%;
     margin: auto;
     font-weight: bold;
+    text-align: left;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
 }
 
 .date {
     grid-area: date;
     margin: auto;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
 }
 
 .buttonGrid {
@@ -50,7 +82,8 @@ html, body {
 }
 
 #b1:hover, #b3:hover, #b4:hover {
-    background-color: lightgreen;
+    animation: button1-Animation 0.5s;
+    animation-fill-mode: forwards;
 }
 
 #b2 {
@@ -65,5 +98,6 @@ html, body {
 }
 
 #b2:hover {
-    background-color: rgb(251, 255, 0);
+    animation: button2-Animation 0.5s;
+    animation-fill-mode: forwards;
 }

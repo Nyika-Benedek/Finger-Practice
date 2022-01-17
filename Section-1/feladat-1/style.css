@@ -1,39 +1,46 @@
 * {
-    --themeColor: rgb(0,102,51);
+    --theme-Color: #006633;
+    --font-Color: #55AE3A;
 }
 
-body {
+body, html {
+    font-family: Roboto;
+    position: relative;
     margin: 0;
+    padding: 0;
     text-align: center;
+    height: 100%;
 }
 
 header {
-    background-color: var(--themeColor);
+    background-color: var(--theme-Color);
     padding: 0;
     margin: 0;
     width: 100%;
-    left: 0;
-    height: auto;
-    top: 0;
+    height: 35px;
     position: relative;
-    margin-bottom: 1rem;
 }
 
-div {
-    width: min-content;
-    margin: auto;
+.header-Title {
+    font-weight: 900;
+    font-size: 24px;
 }
 
-.slopingFrame {
+.header-Ico {
+    transform: translate(-30%, -15%);
+}
+
+.sloping-Frame {
     position: relative;
-    height: inherit;
-    padding: 0.5rem;
+    height: 35px;
+    width: 90px;
+    padding-top: 5px;
     background-color: white;
-    display: inline;
-
+    margin: auto;
+    margin-top: 0;
 }
 
-.slopingFrame::before {
+.sloping-Frame::before {
     top: 0;
     content: " ";
     position: absolute;
@@ -42,33 +49,53 @@ div {
     border-right: 1.5rem solid white;
 }
 
-.slopingFrame::after {
+.sloping-Frame::after {
     top: 0;
     content: " ";
     position: absolute;
-    left: 90%;
+    left: 100%;
     border-top: 2.2rem solid white;
     border-right: 1.5rem solid transparent;
 }
 
 .title {
     font-weight: bold;
-    color: var(--themeColor);
+    color: var(--theme-Color);
     margin: 0;
-    margin-top: 1rem;
+    margin-top: 9px;
     text-align: left;
     padding-left: 0.5rem;
+    font-size: smaller;
 }
 
-.displayByRows {
+div {
+    width: 620px;
+    height: 220px;
+    margin: auto;
+}
+
+.display-By-Rows {
     display: block;
     width: fit-content;
 }
 
-.fancyInput {
-    padding: 0.3rem;
+.fancy-Input {
+    padding: 8px;
     border-radius: 1rem;
-    border: 0.6px solid var(--themeColor);
+    border: 0.6px solid var(--theme-Color);
     padding-left: 0.5rem;
-    color: rgb(1, 149, 1);
+    color: var(--font-Color);
+    width: 400px;
+    margin-bottom: 14px;
+}
+
+.fancy-Input::placeholder {
+    color: var(--font-Color);
+}
+
+.asd {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

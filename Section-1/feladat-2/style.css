@@ -1,48 +1,88 @@
+* {
+    --theme-Color: #006633;
+    --megse-Color: #BFBFBF;
+    --delete-Color: #EF3A43;
+}
+
+@keyframes megse-Hover-Animation {
+    0%   {background-color: var(--megse-Color);}
+    100% {background-color: lightgray;}
+  }
+
+@keyframes delete-Hover-Animation {
+    0%   {background-color: var(--delete-Color);}
+    100% {background-color: lightcoral;}
+}
+
 html, body {
     margin: 0;
     height: 100%;
+    font-family: Roboto;
 }
 
-.alertDiv {
+.alert-Div {
     color: white;
-    background-color: rgb(0,102,51);
+    background-color: var(--theme-Color);
     text-align: center;
-    padding: 1rem;
-    border-radius: 1rem;
-    width: fit-content;
+    padding: 12px;
+    padding-bottom: 22px;
+    border-radius: 16px;
+    width: 500px;
+    height: 100px;
     margin: 0;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .alert {
- font-weight: bold;
+    font-weight: bold;
+    margin: 0;
+}
+
+.message {
+    margin: 0;
+    padding: 0;
+    margin-top: 12px;
+    margin-bottom: 13px;
 }
 
 .button {
-    border: 1px solid white;
-    padding: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-radius: 0.5rem;
+    border: 1px solid #F2F2F2;
+    padding: 8px 32px;
+    border-radius: 8px;
     margin-right: 1rem;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;  
 }
 
-#buttonMegse {
+#button-Megse {
+    width: 114px;
+    height: 40px;
     color: white;
-    background-color: gray;
+    background-color: var(--megse-Color);
 }
 
-#buttonMegse:hover {
-    background-color: lightgray;
+#button-Megse:hover {
+    background-color: var(--megse-Color);
+    animation: megse-Hover-Animation 0.5s;
+    animation-fill-mode: forwards;
+    
 }
 
-#buttonDelete {
-    background-color: rgb(239, 58, 67);
+#button-Delete {
+    width: 88px;
+    height: 40px;
+    color: #FFFFFF;
+    background-color: var(--delete-Color);
 }
 
-#buttonDelete:hover {
-    background-color: lightcoral;
+#button-Delete:hover {
+    background-color: var(--delete-Color);
+    animation: delete-Hover-Animation 0.5s;
+    animation-fill-mode: forwards;
 }

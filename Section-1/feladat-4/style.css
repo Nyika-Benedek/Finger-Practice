@@ -1,4 +1,14 @@
-.gridContainer {
+* {
+    --theme-Color: #006633;
+}
+
+html, body {
+    position: relative;
+    height: 100%;
+    font-family: Roboto;
+}
+
+.grid-Container {
     display: grid;
     grid-template-columns: 3fr 3fr;
     grid-template-rows: 2fr;
@@ -6,67 +16,92 @@
         "bigProfile smallProfile";
 }
 
-.bigProfile {
+.big-Profile {
+    position: relative;
+    width: 300px;
+    height: 300px;
     grid-area: bigProfile;
     margin: auto;
-    background-color: green;
-    border-radius: 1rem;
-    padding: 1.5rem;
+    background-color: var(--theme-Color);
+    border-radius: 44px;
     padding-bottom: 0;
 }
 
-.bigProfilePic {
-    height: 15rem;
-    border-top-right-radius: 5rem;
-    border-top-left-radius: 5rem;
+.big-Profile-Pic {
+    margin-top: 22px;
+    margin-left: 32px;
+    margin-right: 33px;
+    margin-bottom: 0;
+    border-radius: 44px 44px 0px 0px;
     /*background-color: green;*/
 }
 
-.bigProfile p {
+.big-Profile p {
     color: white;
     font-size: larger;
     font-weight: bold;
     padding: 0;
     margin: 0;
+    margin-top: 4.74px;
+    margin-bottom: 6.4px;
     height: min-content;
     text-align: center;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 20px;
 }
 
-.smallProfile {
+.small-Profile {
     grid-area: smallProfile;
     margin: auto;
-
-    height: 6rem;
+    width: 300px;
+    height: 125px;
     position: relative;
-    background-color: green;
+    background-color: var(--theme-Color);
     text-align: center;
-    border-radius: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0;
+    padding-bottom: 5.74px;
+    border-radius: 36px;
 }
 
-.smallProfilePic {
-    height: 5rem;
-    border-radius: 100%;
-    margin-top: -2rem;
-    margin-bottom: 0;
+.small-Profile-Pic {
+    position: relative;
+    border-radius: 50%;
+    border: 4px solid var(--theme-Color);
+    margin: 0;
     padding: 0;
-    border: 2px solid green;
 }
 
 .name, .rank {
+    position: relative;
     color: white;
     font-size: larger;
 }
 
 .name{
+
     font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
 }
 
 .rank{
     margin: 0;
-    margin-bottom: 1px;
     padding: 0;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.small-Profile-Content {
+    transform: translate(0, -55.79px);
 }

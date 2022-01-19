@@ -13,19 +13,63 @@ body, html {
 
 .header {
     background-color: var(--color);
-    height: 3.5rem;
+    height: 56px;
+    width: 1720px;
+    box-sizing: border-box;
 }
 
 .icon {
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
 }
 
 
-.gridContainer {
+.Container {
     position: relative;
-    top: 20px;
-    display: grid;
+    top: 16px;
+    display: flex;
+    /*
     grid-template-columns: 3rem 5rem repeat(7, minmax(50px, auto)) 3rem;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr;*/
+}
+
+#i1 {
+    margin-left: 13px;
+    margin-right: 44px;
+}
+
+#i2 {
+    margin-right: 148px;
+}
+
+#i3 {
+    margin-right: 210.67px;
+}
+
+#i4 {
+    margin-right: 209.79px;
+}
+
+#i5 {
+    margin-right: 180.95px;
+}
+
+#i6 {
+    margin-right: 139px;
+}
+
+#i7 {
+    margin-right: 194px;
+}
+
+#i8 {
+    margin-right: 153px;
+}
+
+#i9 {
+    margin-right: 169.08px;
+}
+
+#i10 {
+    margin-right: 15px;
 }

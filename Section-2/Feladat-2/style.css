@@ -40,7 +40,7 @@ body, html {
 }
 
 /*Buttons*/
-.buttonsContainer {
+.buttons-Container {
     grid-area: buttons;
 
     display: grid;
@@ -48,6 +48,8 @@ body, html {
     grid-template-rows: 1fr;
     grid-template-areas: 
         "interjuk portrek elemzesek kultura";
+    
+    grid-auto-flow: column;
 }
 
 #interjuk {
@@ -70,7 +72,7 @@ body, html {
 
 /*Options*/
 
-.optionsContainer {
+.options-Container {
     grid-area: options;
 
     display: grid;
@@ -80,6 +82,7 @@ body, html {
     "pic sliders help bell comment search";
 
     direction:rtl;
+    grid-auto-flow: column;
 }
 
 #search {
@@ -116,7 +119,7 @@ body, html {
     grid-area: sliders;
 }
 
-#profilePic {
+#profile-Pic {
     grid-area: pic;
     height: 40px;
     border-radius: 50%;
@@ -130,7 +133,7 @@ body, html {
 
 /*1340*/
 @media (max-width: 1340px) {
-    .sizeBig {
+    .size-Big {
         display: none;
     }
 
@@ -183,11 +186,11 @@ body, html {
         display: none;
     }
 
-    .optionsContainer {
+    .options-Container {
         direction: ltr;
     }
 
-    #profilePic {
+    #profile-Pic {
         margin-right: 10px;
     }
 

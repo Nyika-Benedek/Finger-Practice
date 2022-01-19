@@ -1,17 +1,15 @@
 * {
-    --color: rgb(0,102,51);
-    --color2: rgb(85, 174, 58);
-    --colorDiv: rgb(54, 54, 54);
+    --theme-Color: #363636;
 
-    --bg1: rgb(85, 174, 58);
-    --bg2: rgb(255, 199, 0);
-    --bg3: rgb(223, 126, 36);
-    --bg4: rgb(148, 0, 211);
-    --bg5: rgb(45, 140, 216);
-    --bg6: rgb(225, 0, 0);
+    --bg1: #55AE3A;
+    --bg2: #FFC700;
+    --bg3: #DF7E24;
+    --bg4: #9400D3;
+    --bg5: #2D8CD8;
+    --bg6: #E10000;
 }
 
-body, html {
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -19,54 +17,53 @@ body, html {
     color: white;
 }
 
-.container {
-    background-color: var(--colorDiv);
+.list {
     position: relative;
-    width: fit-content;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    padding: 1rem;
-    border-radius: 3rem;
+
+    width: 462px;
+    height: 60px;
+    background-color: var(--theme-Color);
+
+    display: flex;
+    justify-content: space-between;
+    border-radius: 60px;
+}
+
+.circle {
+    height: 60px;
+    width: 60px;
+    background-color: var(--theme-Color);
+    border-radius: 50%;
+    display: inline-block;
     text-align: center;
-    padding: 0;
 
-    gap: 3rem;
-    display: grid;
-    grid-template-columns: repeat(6, minmax(30px, 45px));
-    grid-template-rows: 1fr;
+    box-sizing: border-box;
+    padding-top: 20px;
 }
 
-.bg {
-    color: var(--colorDiv);
+#d1:hover {
+    background-color: var(--bg1);
 }
 
-/*First element smoothing*/
-#d1 {
-    transform: translate(-0.4rem);
+#d2:hover {
+    background-color: var(--bg2);
 }
 
-
-#d1:hover > .bg {
-    color: var(--bg1);
+#d3:hover {
+    background-color: var(--bg3);
 }
 
-#d2:hover > .bg {
-    color: var(--bg2);
+#d4:hover {
+    background-color: var(--bg4);
 }
 
-#d3:hover > .bg {
-    color: var(--bg3);
+#d5:hover {
+    background-color: var(--bg5);
 }
 
-#d4:hover > .bg {
-    color: var(--bg4);
-}
-
-#d5:hover > .bg {
-    color: var(--bg5);
-}
-
-#d6:hover > .bg {
-    color: var(--bg6);
+#d6:hover {
+    background-color: var(--bg6);
 }

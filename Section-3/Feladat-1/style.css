@@ -1,6 +1,7 @@
 * {
     --theme-Color: #006633;
     --color2: #55AE3A;
+    --error-Color: #EF3A43;
 }
 
 body, html {
@@ -19,11 +20,256 @@ body, html {
 
     width: 298px;
     height: 611px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 60px 16px 16px 54px;
+    border-radius: 8px;
 }
+
+.greetings {
+  margin: 0;
+  padding: 0;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.subgreetings {
+  margin: 0;
+  margin-top: 8px;
+  padding: 0;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.Log-Or-Sign-In {
+  margin: 0;
+  margin-top: 21px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registration {
+  width: 133px;
+  height: 36px;
+
+  margin: 0;
+
+  border: 1px solid var(--color2);
+  box-sizing: border-box;
+  border-radius: 44px 0px 0px 44px;
+
+  color: var(--theme-Color);
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.registration:hover {
+  background-color: rgb(161, 161, 161);
+}
+
+
+.login {
+  width: 133px;
+  height: 36px;
+
+  margin: 0;
+
+  background-color: var(--theme-Color);
+  border: 1px solid var(--color2);
+  box-sizing: border-box;
+  border-radius: 0px 44px 44px 0px;
+
+  color: white;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.login:hover {
+  background-color: #00a753;
+}
+
+.fancy-Input {
+  width: 266px;
+  height: 36px;
+
+  border: 1px solid #006633;
+  box-sizing: border-box;
+  border-radius: 44px;
+
+  color: var(--color2);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.fancy-Input::placeholder {
+  color: var(--color2);
+}
+
+#email {
+  position: relative;
+  margin: auto;
+  margin-top: 29px;
+  margin-bottom: 0;
+  padding: 8px 6px 6px 9px;
+}
+
+.exception {
+  border: 1px solid var(--error-Color);
+}
+.exception::after {
+  position: absolute;
+  top: 38px;
+  left: 10px;
+
+  color: var(--error-Color);
+  content: "Hibás e-mail cím";
+}
+
+#password-Div {
+  position: relative;
+  display: flex;
+  margin: auto;
+  margin-top: 33px;
+  margin-bottom: 0;
+}
+
+#visibility-Icon {
+  position: absolute;
+  top: 6px;
+  right: 9px;
+
+  color: var(--color2);
+}
+
+#visibility-Icon {
+  cursor: pointer;
+}
+
+#password {
+  padding: 8px 6px 6px 9px;
+}
+
+.pw-Reminder {
+  text-decoration: underline;
+
+  margin: 0;
+  margin-top: 2px;
+  padding: 0;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.remember {
+  margin: 0;
+  margin-top: 65px;
+  margin-left: 14px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 12px;
+}
+
+.submit {
+  width: 260px;
+  height: 40px;
+  margin: auto;
+  margin-top: 18px;
+  margin-bottom: 0px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--theme-Color);
+  border: none;
+  border-radius: 44px;
+
+  color: white;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  }
+
+  .submit:hover {
+    background-color: #00a753;
+  }
+
+.login-With-Other {
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  color: white;
+}
+
+.circle {
+  width: 38px;
+  height: 38px;
+
+  box-sizing: border-box;
+  background-color: var(--theme-Color);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
 
 
 /* --- HR FORNATING --- */
 .strike {
+    margin-top: 15px;
     display: block;
     text-align: center;
     overflow: hidden;

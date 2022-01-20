@@ -1,0 +1,144 @@
+* {
+    --theme-Color: #006633;
+}
+
+body, html {
+    height: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 700px;
+    height: 400px;
+    box-sizing: border-box;
+    padding: 0;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.img {
+    width: 700px;
+    height: 362px;
+    margin: 0;
+}
+
+.headline {
+    position: relative;
+    width: 100%;
+    height: 38px;
+    background-color: var(--theme-Color);
+
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "headline ago views date";
+    grid-auto-flow: column;
+    align-self: center;
+}
+
+.sloping-Frame {
+    grid-area: headline;
+    position: relative;
+    height: 100%;
+    width: fit-content;
+    padding: auto;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-left: 30px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.sloping-Frame::before {
+    position: absolute;
+    width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-bottom: 38px solid white;
+    left: -20px;
+    z-index: 0;
+    content: "";
+}
+
+.sloping-Frame::after {
+    position: absolute;
+    width: 0;
+	height: 0;
+	border-right: 20px solid transparent;
+	border-top: 38px solid white;
+    left: 100%;
+    z-index: 0;
+    content: "";
+}
+
+.ago {
+    grid-area: ago;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+}
+
+.views {
+    grid-area: views;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+}
+
+.date {
+    grid-area: date;
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: white;
+    margin-right: 5px;
+}
+
+.icon {
+    margin-right: 3px;
+}

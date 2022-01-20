@@ -2,6 +2,7 @@
     --theme-Color: #006633;
     --color2: #55AE3A;
     --error-Color: #EF3A43;
+    --input-Width: 500px;
 }
 
 body, html {
@@ -18,13 +19,14 @@ body, html {
     transform: translate(-50%, -50%);
     margin: 0;
 
-    width: 298px;
-    height: 611px;
+    width: 30%;
+    height: 40%;
 
     display: flex;
     flex-direction: column;
 
-    padding: 60px 16px 16px 54px;
+    padding: 60px 16px 16px;
+    padding-bottom: 54px;
     border-radius: 8px;
 }
 
@@ -54,7 +56,8 @@ body, html {
 }
 
 .Log-Or-Sign-In {
-  margin: 0;
+  width: var(--input-Width);
+  margin: auto;
   margin-top: 21px;
   padding: 0;
 
@@ -64,7 +67,7 @@ body, html {
 }
 
 .registration {
-  width: 133px;
+  width: 50%;
   height: 36px;
 
   margin: 0;
@@ -90,7 +93,7 @@ body, html {
 
 
 .login {
-  width: 133px;
+  width: 50%;
   height: 36px;
 
   margin: 0;
@@ -116,7 +119,7 @@ body, html {
 }
 
 .fancy-Input {
-  width: 266px;
+  width: var(--input-Width);
   height: 36px;
 
   border: 1px solid #006633;
@@ -208,7 +211,7 @@ body, html {
 }
 
 .submit {
-  width: 260px;
+  width: var(--input-Width);
   height: 40px;
   margin: auto;
   margin-top: 18px;
@@ -373,3 +376,47 @@ body, html {
   .slider.round:before {
     border-radius: 50%;
   }
+
+@media (max-width: 1600px) {
+  *{
+    --input-Width: 450px;
+  }
+}
+
+@media (max-width: 1450px) {
+  *{
+    --input-Width: 400px;
+  }
+}
+
+@media (max-width: 1250px) {
+  *{
+    --input-Width: 350px;
+  }
+}
+
+@media (max-width: 1100px) {
+  *{
+    --input-Width: 285px;
+  }
+}
+
+@media (max-width: 850px) {
+  *{
+    --input-Width: 222px;
+  }
+
+  .registration {
+    width: 62%;
+  }
+
+  .login {
+    width: 38%;
+  }
+}
+
+@media (max-width: 650px) {
+  *{
+    --input-Width: 190px;
+  }
+}

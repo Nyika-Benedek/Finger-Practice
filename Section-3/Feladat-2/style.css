@@ -1,0 +1,270 @@
+* {
+    --color: #006633;
+    --color2: #55AE3A;
+    --color3: #B1DDC4;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-size: larger;
+}
+
+.header1 {
+    position: relative;
+    background-color: var(--color);
+    color: white;
+    height: 85px;
+
+    display: grid;
+    grid-template-columns: 0.3fr 0.5fr 5fr 2fr ;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "bars img buttons options margo";
+        grid-gap: 0.5rem;
+}
+
+.icon {
+    margin: auto;
+}
+
+#bars {
+    grid-area: bars;
+}
+
+#img {
+    grid-area: img;
+    height: 40px;
+    margin: auto;
+}
+
+/*Buttons*/
+.buttons-Container {
+    grid-area: buttons;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 130px));
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "interjuk portrek elemzesek kultura";
+    
+    grid-auto-flow: column;
+}
+
+#interjuk {
+    grid-area: interjuk;
+}
+
+#portrek {
+    grid-area: portrek;
+}
+
+#elemzesek {
+    grid-area: elemzesek;
+}
+
+#kultura {
+    grid-area: kultura;
+}
+
+
+
+/*Options*/
+
+.options-Container {
+    grid-area: options;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min(40px));
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "pic sliders help bell comment search";
+
+    direction:rtl;
+    grid-auto-flow: column;
+}
+
+#search {
+    grid-area: search;
+}
+
+#comment {
+    grid-area: comment;
+}
+
+#bell {
+    grid-area: bell;
+}
+
+#help {
+    grid-area: help;
+}
+
+
+
+
+/*
+.profile {
+    grid-area: profile;
+    
+    display: grid;
+    grid-template-columns:repeat(auto-fit, min(40px));
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "sliders pic";
+}*/
+
+#sliders {
+    grid-area: sliders;
+}
+
+#profile-Pic {
+    grid-area: pic;
+    height: 40px;
+    border-radius: 50%;
+    margin: auto;
+
+}
+
+#contact {
+    display: none;
+}
+
+
+/* --- SECOND HEADER LINE ---*/
+
+
+.header2 {
+    height: 85px;
+    width: 100%;
+
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 10fr 12fr 3fr 1fr;
+    grid-template-areas: 
+        " g1 g2 g3 g4";
+}
+
+.g1 {
+    grid-area: g1;
+
+    display: flex;
+    justify-content: left;
+    gap: 24px;
+}
+
+.g2 {
+    grid-area: g2;
+}
+
+.g3 {
+    grid-area: g3;
+}
+
+.g4 {
+    grid-area: g4;
+}
+
+.bg {
+    height: 72px;
+    width: 72px;
+    background-color: var(--color2);
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 13px;
+
+    color: white;
+}
+
+#dp {
+    height: 48px;
+    width: 48px;
+
+}
+
+#face {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.search {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 18px 18px;
+        background-position: 5%;
+}
+
+/*1340*/
+@media (max-width: 1340px) {
+    .size-Big {
+        display: none;
+    }
+
+    .header1 {
+        display: grid;
+        grid-template-columns: 0.12fr 0.4fr 2fr ;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "bars img options margo";
+            grid-gap: 0.5rem;
+    }
+}
+
+
+/*820*/
+@media (max-width: 820px) {    
+    .header1 {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 6fr 1fr ;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "bars contact img options margo";
+            grid-gap: 0.5rem;
+    }
+
+    #contact {
+        grid-area: "contact";
+        display:inline;
+    }
+
+    /*vlmi miatt nem engedi az osztályban való hivatkozást... de id-kal működik 
+    .sizeMedium {
+        display: none;
+    }
+    */
+
+    #search {
+        display: none;
+    }
+
+    #comment {
+        display: none;
+    }
+
+    #bell {
+        display: none;
+    }
+
+    #help {
+        display: none;
+    }
+
+    .options-Container {
+        direction: ltr;
+    }
+
+    #profile-Pic {
+        margin-right: 10px;
+    }
+
+    #sliders {
+        margin-left: 20px;
+    }
+}

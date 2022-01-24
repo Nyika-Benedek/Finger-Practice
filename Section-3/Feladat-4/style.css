@@ -1,0 +1,306 @@
+* {
+    --theme-Color: #006633;
+    --color2: #55AE3A;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.wrapper {
+    position: relative;
+    width: 298px;
+    height: 791px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid black;
+}
+
+.circle {
+    height: 44px;
+    width: 44px;
+    background-color: var(--theme-Color);
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* icon sizing */
+    font-size: 20px;
+}
+
+.circle:hover {
+    background-color: #00a854;
+}
+
+.small-Circle {
+    height: 32px;
+    width: 32px;
+    background-color: var(--color2);
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    
+    margin: 0;
+    margin-right: 4px;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-Circle:hover {
+    background-color: #468a31;
+}
+
+.fading-Element {
+    position: absolute;
+    top: 12px;
+}
+
+#fading1 {
+    left: 16px;
+}
+
+#fading2 {
+    right: 16px;
+}
+
+.img {
+    width: 266px;
+    height: 266px;
+    margin: auto;
+    border-radius: 200px;
+}
+
+.name {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 4px;
+    padding: 0;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+}
+
+.profile {
+    margin: 0;
+    margin-top: 3px;
+    padding: 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+}
+
+.profile-Content {
+    margin: 0;
+    margin-right: 45px;
+    padding: 0;
+
+    width: max-content;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+}
+.bs {
+    font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: justify;
+}
+
+.button {
+    width: 138px;
+    height: 51px;
+    margin: 0;
+    margin-top: 13px;
+
+    background: var(--theme-Color);
+    border-radius: 44px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+    
+    border: none;
+
+    /* text */
+    /* Main / BUTTON Large */
+
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    /* Fehér */
+
+    color: #FFFFFF;
+}
+
+.button:active{
+    background-color: #00994d;
+}
+
+.button-Container {
+    margin: 0;
+    margin-top: 29px;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.appearing-Element {
+    display: none;
+}
+
+
+
+/* --- wide sight -- */
+
+@media (min-width: 1400px) {
+    .wrapper {
+        height: 272px;
+        width: 1366px;
+
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        gap: 0;
+    }
+
+    .fading-Element {
+        display: none;
+    }
+
+    .img {
+        order: 1;
+        width: 256px;
+        height: 256px;
+    }
+
+    .name {
+        margin-top: 16px;
+        margin-bottom: 19px;
+    }
+
+    .profile {
+        order: 2;
+        flex-direction: column;
+    }
+
+    .button {
+        order: 3;
+        margin-top: 20px;
+    }
+
+    .bs {
+        order: 4;
+        width: 791px;
+        margin-top: 5px;
+    }
+
+    .button-Container {
+        order: 5;
+        width: 791px;
+        height: 140px;
+
+        margin: 0;
+        margin-top: 11px;
+        padding: 0;
+
+        justify-content: flex-start;
+        flex-flow: column wrap;
+    }
+
+    .appearing-Element {
+        display: inline;
+        margin-left: 5px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        /* identical to box height */
+
+    }
+
+    .button-Container-Content {
+        width: 410px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #bc1 {
+        order: 3;
+    }
+
+    #bc2 {
+        order: 1;
+    }
+    
+    #bc3 {
+        order: 2;
+    }
+
+    #bc4 {
+        order: 6;
+    }
+
+    #bc5 {
+        order: 4;
+    }
+
+    #bc6 {
+        order: 5;
+    }
+}

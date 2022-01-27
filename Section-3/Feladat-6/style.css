@@ -1,0 +1,580 @@
+* {
+    --theme-Color: #006633;
+    --color2: #55AE3A;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.wrapper {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 1920px;
+    height: 900px;
+}
+
+.pattern {
+    width: 100%;
+    height: 174px;
+    background-image: url("pattern.png");
+    background-size: 700px 174px;
+}
+
+
+.conntent-Grid {
+    width: 100%;
+
+    margin-top: 70px;
+    margin-left: 21px;
+    margin-right: 20px;
+    margin-bottom: 90px;
+
+    display: grid;
+    grid-template-columns: 200px 200px 200px 600px 500px;
+    grid-template-rows: 250px 110px;
+    grid-template-areas: 
+        "tartalom fedezz-Fel rolunk add hirlevel"
+        "tartalom kovess kovess add hirlevel";
+
+        column-gap: 20px;
+        row-gap: 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+ul li {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 130.3%;
+}
+
+/* --- Tartalom --- */
+.tartalom {
+    grid-area: tartalom;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.tartalom ul {
+    list-style-type: none;
+}
+
+/* --- Fedezz Fel --- */
+.fedezz-Fel {
+    grid-area: fedezz-Fel;
+}
+
+.fedezz-Fel ul {
+    list-style-type: none;
+}
+
+/* --- Rolunk --- */
+.rolunk {
+    grid-area: rolunk;
+}
+
+.rolunk ul {
+    list-style-type: none;
+}
+
+/* --- Kövess minket --- */
+.kovess {
+    grid-area: kovess;
+}
+
+.button-Container {
+    display: flex;
+    flex-direction: row;
+
+    gap: 8px;
+}
+
+.circle {
+    height: 80px;
+    width: 80px;
+    font-size: 45px;
+    background-color: var(--theme-Color);
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    
+
+    margin: 0;
+    padding: 16.5px;
+
+    color: white;
+}
+
+.circle:hover {
+    background-color: #009e4f;
+}
+
+/* --- ADDVERTISEMENT --- */
+.add {
+    grid-area: add;
+
+    margin-top: 75px;
+
+    width: 600px;
+    height: 360px;
+}
+
+/* --- HÍRLEVÉL --- */
+.hirlevel-Box {
+    grid-area: hirlevel;
+    margin-top: 75px;
+
+    background-color: var(--color);
+    border-radius: 16px;
+    width: 500px;
+    height: 360px;
+
+    padding: 39px 50px 50px 36px;
+    box-sizing: border-box;
+
+    color: white;
+    font-family: Roboto;
+    background-color: var(--theme-Color);
+}
+
+.title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+.icon {
+    transform: translate(0, 6px);
+
+    margin: 0;
+    margin-right: 12.07px;
+}
+
+.input-Text {
+    width: 400px;
+    height: 50px;
+    margin: 0;
+    margin-top: 20px;
+    border: 2px solid var(--color2);
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 7.45px;
+    padding-left: 11.73px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 29px;
+    line-height: 34px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: black;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+}
+
+.inputCheckBox {
+    background: var(--color);
+}
+
+#checkb {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    background: var(--color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid white;
+    border-radius: 2px;
+    position: relative;
+    margin: 0;
+    margin-right: 3px;
+    top: 4px;
+}
+
+#checkb:checked::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '\2713';
+}
+
+.link {
+    color: white;
+}
+
+.big-Button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+    width: 240px;
+    height: 50px;
+    box-sizing: border-box;
+
+    color: white;
+    text-align: center;
+    background-color: var(--color2);
+    margin: auto;
+    margin-top: 30px;
+    padding: 7px;
+    border-radius: 44px;
+
+    border: none;
+    box-shadow: 0px 1px 2px #1E1E25, 0px 2px 4px #1E1E22;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 31px;
+    line-height: 36px;
+
+    cursor: pointer;
+}
+
+.big-Button:active {
+    background-color: rgb(35, 163, 35);
+}
+
+.button-Icon {
+    margin: 0;
+    transform: translate(0, -2px);
+}
+
+.AT {
+    font-size: smaller;
+    margin: 0;
+    margin-top: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+
+/* --- FOOTER --- */
+.footer {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--theme-Color);
+
+    left: 0;
+    bottom: 0;
+}
+
+#footer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+
+    padding: 14px;
+    padding-bottom: 0;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 47px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* Fehér */
+
+    color: #FFFFFF;
+}
+
+#footer1 > * {
+    width: 500px;
+}
+
+#footer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+
+    padding: 16px;
+    padding-top: 21px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+
+
+    /* Fehér */
+
+    color: #FFFFFF;
+}
+
+
+.link {
+    text-decoration: none;
+}
+
+
+
+/* ----- Media ----- */
+
+
+/* --- Medium sight --- */
+@media (max-width: 1950px) {
+
+    .wrapper {
+        width: 1024px;
+        height: 1550px;
+    }
+
+    .pattern {
+        height: 93px;
+        background-size: 200px 93px;
+    }
+
+    .conntent-Grid {
+        width: 100%;
+    
+        margin-left: 134px;
+        margin-top: 30px;
+        margin-bottom: 90px;
+    
+        display: grid;
+        grid-template-columns: 250px 250px 250px;
+        grid-template-rows: 250px 110px 425px 360px;
+        grid-template-areas: 
+            "tartalom fedezz-Fel rolunk"
+            "tartalom kovess kovess"
+            "add add add"
+            "hirlevel hirlevel hirlevel";
+    
+            column-gap: 20px;
+            row-gap: 20px;
+    }
+
+    .add {
+        width: 750px;
+        height: 425px;
+    }
+
+    .hirlevel-Box {
+        width: 750px;
+        padding: 19px 16px 16px 19px;
+    }
+
+    .input-Text{
+        width: 100%;
+
+        border: 1px solid #55AE3A;
+        box-sizing: border-box;
+        border-radius: 44px;
+    }
+
+    #footer1 {
+        justify-content: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    #footer1 * {
+        width: fit-content;
+        margin-right: 20px;
+    }
+
+    #footer2 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+}
+
+
+/* --- Small sight ---*/
+
+@media (max-width: 1200px){
+
+    .wrapper {
+        width: 420px;
+        height: 855px;
+    }
+
+    .conntent-Grid {
+        width: 100%;
+    
+        margin: 0;
+        margin-top: 10px;
+        justify-content: center;
+    
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 70px 90px 150px;
+        grid-template-areas: 
+            "tartalom fedezz-Fel rolunk"
+            "tartalom kovess kovess"
+            "add add add"
+            "hirlevel hirlevel hirlevel";
+    
+            column-gap: 20px;
+            row-gap: 20px;
+    }
+
+    .tartalom {
+        margin-left: 30px;
+    }
+
+    h1 {
+        margin-bottom: 2px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .kovess h1 {
+        margin-top: 10px;
+        margin-left: 65px;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        margin-top: 0;
+    }
+
+    ul li {
+        margin-left: -30px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 130.3%;
+    }
+
+    .circle {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        padding: 9px;
+    }
+
+    .fedezz-Fel {
+        margin-left: 15px;
+    }
+
+    .rolunk {
+        margin-left: 15px;
+    }
+
+    .add {
+        width: 350px;
+        height: 88px;
+        margin: 0;
+        background-color: #fff;
+    }
+
+    .hirlevel-Box {
+        width: 350px;
+        height: fit-content;
+
+        margin: 0;
+
+        padding: 8px;
+        padding-left: 21px;
+        padding-right: 21px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .small-Sight-Disappear {
+        display: none;
+    }
+
+    .icon {
+        font-size: 40px;
+    }
+
+    .input-Text {
+        height: 30px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+
+    .big-Button {
+        margin-top: 11px;
+
+        width: 170px;
+        height: 40px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    #footer1 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    #footer1 > * {
+        margin: auto;
+        padding: 11px;
+    }
+
+    #footer2 {
+        padding: 13px;
+    }
+}

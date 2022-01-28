@@ -2,7 +2,7 @@
     --theme-Color: #006633;
     --color2: #55AE3A;
     --error-Color: #EF3A43;
-    --input-Width: 500px;
+    --input-Width: 600px;
 }
 
 body, html {
@@ -150,11 +150,27 @@ body, html {
 .exception {
   border: 1px solid var(--error-Color);
 }
+
+.exception-Message {
+  margin-top: 2px;
+  padding-left: 8px;
+  color: var(--error-Color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
 .exception::after {
   position: absolute;
   top: 38px;
   left: 10px;
 
+  display: inline;
   color: var(--error-Color);
   content: "Hibás e-mail cím";
 }

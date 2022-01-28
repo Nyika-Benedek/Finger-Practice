@@ -23,8 +23,8 @@ body, html {
 .pattern {
     width: 100%;
     height: 174px;
-    background-image: url("pattern.png");
-    background-size: 700px 174px;
+    background-image: url("pattern.svg");
+
 }
 
 

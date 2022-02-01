@@ -29,6 +29,10 @@ body, html {
     margin: auto;
 }
 
+.underline:hover {
+    text-decoration: underline;
+}
+
 #bars {
     grid-area: bars;
 }

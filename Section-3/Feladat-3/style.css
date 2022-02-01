@@ -204,6 +204,9 @@ html, body {
     padding-right: 16px;
 
     text-align: center;
+
+    /* animation speed*/
+    transition: 0.5s;
 }
 
 .flex-Content:hover {

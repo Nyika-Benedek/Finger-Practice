@@ -85,6 +85,9 @@ body, html {
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
+
+  /* animation speed*/
+  transition: 0.5s;
 }
 
 .registration:hover {
@@ -112,6 +115,9 @@ body, html {
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
+
+  /* animation speed*/
+  transition: 0.5s;
 }
 
 .login:hover {
@@ -250,6 +256,9 @@ body, html {
   line-height: 24px;
   text-transform: uppercase;
   font-feature-settings: 'pnum' on, 'lnum' on;
+
+  /* animation speed*/
+  transition: 0.5s;
   }
 
   .submit:hover {
@@ -280,6 +289,13 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* animation speed*/
+  transition: 0.5s;
+}
+
+.circle:hover {
+  background-color: #00ac56;
 }
 
 

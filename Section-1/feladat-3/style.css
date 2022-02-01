@@ -11,16 +11,6 @@ html, body {
     
 }
 
-@keyframes button1-Animation {
-    0%   {background-color: var(--theme-Color);}
-    100% {background-color: lightgreen;}
-  }
-
-@keyframes button2-Animation {
-    0%   {background-color: var(--orange);}
-    100% {background-color: lightsalmon;}
-}
-
 .grid-Container {
     display: grid;
     grid-template-columns: 1fr 5fr 3fr 2fr;
@@ -79,11 +69,13 @@ html, body {
     width: 58px;
     padding: 1rem;
     margin-right: 1rem;
+
+    /* animation speed*/
+    transition: 0.5s;
 }
 
 #b1:hover, #b3:hover, #b4:hover {
-    animation: button1-Animation 0.5s;
-    animation-fill-mode: forwards;
+    background-color: lightgreen;
 }
 
 #b2 {
@@ -95,9 +87,11 @@ html, body {
     width: 58px;
     padding: 1rem;
     margin-right: 1rem;
+
+    /* animation speed*/
+    transition: 1s;
 }
 
 #b2:hover {
-    animation: button2-Animation 0.5s;
-    animation-fill-mode: forwards;
+    background-color: lightsalmon;
 }

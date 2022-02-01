@@ -35,6 +35,11 @@ body, html {
     font-weight: normal;
     font-size: 30px;
     line-height: 35px;
+
+    border-radius: 50%;
+
+    /* animation speed*/
+    transition: 0.5s;
 }
 
 .icon:hover {
@@ -199,6 +204,9 @@ body, html {
     padding: 13px;
 
     color: white;
+
+    /* animation speed*/
+    transition: 0.5s;
 }
 
 .bg:hover {

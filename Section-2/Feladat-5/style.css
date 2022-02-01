@@ -42,6 +42,9 @@ html, body {
 
     box-sizing: border-box;
     padding-top: 20px;
+
+    /* animation speed*/
+    transition: 0.5s;
 }
 
 #d1:hover {

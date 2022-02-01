@@ -4,16 +4,6 @@
     --delete-Color: #EF3A43;
 }
 
-@keyframes megse-Hover-Animation {
-    0%   {background-color: var(--megse-Color);}
-    100% {background-color: lightgray;}
-  }
-
-@keyframes delete-Hover-Animation {
-    0%   {background-color: var(--delete-Color);}
-    100% {background-color: lightcoral;}
-}
-
 html, body {
     margin: 0;
     height: 100%;
@@ -65,12 +55,13 @@ html, body {
     height: 40px;
     color: white;
     background-color: var(--megse-Color);
+
+    /* animation speed*/
+    transition: 0.5s;
 }
 
 #button-Megse:hover {
-    background-color: var(--megse-Color);
-    animation: megse-Hover-Animation 0.5s;
-    animation-fill-mode: forwards;
+    background-color: lightgray;
     
 }
 
@@ -79,10 +70,11 @@ html, body {
     height: 40px;
     color: #FFFFFF;
     background-color: var(--delete-Color);
+
+    /* animation speed*/
+    transition: 0.5s;
 }
 
 #button-Delete:hover {
-    background-color: var(--delete-Color);
-    animation: delete-Hover-Animation 0.5s;
-    animation-fill-mode: forwards;
+    background-color: lightcoral;
 }

@@ -96,6 +96,8 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
     content: '\2713';
+
+    color: white;
 }
 
 .link {
@@ -129,9 +131,12 @@ html, body {
     line-height: 36px;
 
     cursor: pointer;
+
+    /* animation speed*/
+    transition: 0.5s;
 }
 
-.big-Button:active {
+.big-Button:hover {
     background-color: rgb(35, 163, 35);
 }
 

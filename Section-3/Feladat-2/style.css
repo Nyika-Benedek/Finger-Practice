@@ -330,7 +330,7 @@ body, html {
 /* --- RESPONSIVITY SETTINGS --- */
 
 /*1340*/
-@media (max-width: 1340px) {
+@media (max-width: 1500px) {
     .size-Big {
         display: none;
     }

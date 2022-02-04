@@ -4,10 +4,7 @@
 }
 
 body, html {
-    height: 100%;
     margin: 0;
-    padding: 0;
-    position: relative;
     font-size: larger;
 }
 
@@ -19,7 +16,6 @@ body, html {
 
     display: grid;
     grid-template-columns: 0.3fr 0.5fr 5fr 2fr ;
-    grid-template-rows: 1fr;
     grid-template-areas: 
         "bars img buttons options margo";
         grid-gap: 0.5rem;
@@ -49,7 +45,6 @@ body, html {
 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(130px, 130px));
-    grid-template-rows: 1fr;
     grid-template-areas: 
         "interjuk portrek elemzesek kultura";
     
@@ -81,7 +76,6 @@ body, html {
 
     display: grid;
     grid-template-columns: repeat(auto-fit, min(40px));
-    grid-template-rows: 1fr;
     grid-template-areas: 
     "pic sliders help bell comment search";
 
@@ -128,14 +122,13 @@ body, html {
     height: 40px;
     border-radius: 50%;
     margin: auto;
-
 }
 
 #contact {
     display: none;
 }
 
-/*1340*/
+/*1340 - Medium Sight*/
 @media (max-width: 1340px) {
     .size-Big {
         display: none;
@@ -144,7 +137,6 @@ body, html {
     .header {
         display: grid;
         grid-template-columns: 0.12fr 0.4fr 2fr ;
-        grid-template-rows: 1fr;
         grid-template-areas: 
             "bars img options margo";
             grid-gap: 0.5rem;
@@ -152,12 +144,11 @@ body, html {
 }
 
 
-/*820*/
+/*820 - Small Sight*/
 @media (max-width: 820px) {    
     .header {
         display: grid;
         grid-template-columns: 0.5fr 1fr 6fr 1fr ;
-        grid-template-rows: 1fr;
         grid-template-areas: 
             "bars contact img options margo";
             grid-gap: 0.5rem;

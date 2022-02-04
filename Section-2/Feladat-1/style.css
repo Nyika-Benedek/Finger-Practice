@@ -5,7 +5,6 @@
 
 html, body {
     margin: 0;
-    height: 100%;
     color: white;
     font-family: Roboto;
 }
@@ -22,7 +21,6 @@ html, body {
     width: 500px;
     height: 360px;
 
-    padding-top: 39px;
     padding: 39px 50px 50px 36px;
     box-sizing: border-box;
 }
@@ -36,15 +34,12 @@ html, body {
 
 .icon {
     transform: translate(0, 6px);
-
-    margin: 0;
     margin-right: 12.07px;
 }
 
 .input-Text {
     width: 400px;
     height: 50px;
-    margin: 0;
     margin-top: 20px;
     border: 2px solid var(--color2);
     border-radius: 4px;
@@ -53,12 +48,8 @@ html, body {
     padding-left: 11.73px;
 
     font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 29px;
     line-height: 34px;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    color: black;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -111,12 +102,10 @@ html, body {
 
     width: 240px;
     height: 50px;
-    box-sizing: border-box;
 
     color: white;
     text-align: center;
     background-color: var(--color2);
-    margin: auto;
     margin-top: 30px;
     padding: 7px;
     border-radius: 44px;
@@ -125,7 +114,6 @@ html, body {
     box-shadow: 0px 1px 2px #1E1E25, 0px 2px 4px #1E1E22;
 
     font-family: Roboto;
-    font-style: normal;
     font-weight: bold;
     font-size: 31px;
     line-height: 36px;
@@ -141,7 +129,6 @@ html, body {
 }
 
 .button-Icon {
-    margin: 0;
     transform: translate(0, -2px);
 }
 
@@ -151,8 +138,6 @@ html, body {
     margin-top: 10px;
 
     font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 16px;
 }

@@ -7,10 +7,8 @@
 body, html {
     height: 100%;
     margin: 0;
-    padding: 0;
     position: relative;
     color: white;
-    font-family: Roboto;
 }
 
 .box {
@@ -26,14 +24,10 @@ body, html {
     height: fit-content;
     border-radius: 36px;
 
-    margin: 0;
-    padding: 0;
     padding-bottom: 17px;
 }
 
 .img {
-    position: relative;
-    margin: auto;
     margin-top: 3px;
     margin-bottom: 0;
     border-radius: 50%;
@@ -44,74 +38,50 @@ body, html {
 .name {
     margin: auto;
     margin-top: 1px;
-    margin-bottom: 0;
-    width: fit-content;
 
     font-family: Roboto;
-    font-style: normal;
     font-weight: bold;
     font-size: 20px;
     line-height: 20px;
 }
 
 .work-Place {
-    margin: 0;
-    margin-top: 5px;
-    display: flexbox;
-    flex-direction: column;
-    margin: auto;
-
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 19px;
-    text-align: center;
 }
 
 .bs {
     margin: auto;
     width: 255px;
     margin-top: 14px;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 16px;
     text-align: justify;
 }
 
 .button-Container {
-    text-align: center;
-    position: relative;
-    margin: auto;
     margin-top: 24px;
     margin-left: 30px;
-    overflow: auto;
     display: grid;
     grid-template-columns: repeat(6, minmax(20px, 40px));
     grid-template-rows: 1fr;
 }
 
 .small-bg {
-    color: var(--color);
     height: 22px;
     width: 22px;
     background-color: var(--color);
     border-radius: 50%;
     display: inline-block;
-    text-align: center;
-    box-sizing: border-box;
     transform: translate(0, 5px);
 }
 
 .bg {
-    color: var(--color);
     height: 30px;
     width: 30px;
     background-color: var(--color);
     border-radius: 50%;
     display: inline-block;
-    text-align: center;
-    box-sizing: border-box;
 
     /* animation speed*/
     transition: 0.5s;

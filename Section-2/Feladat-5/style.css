@@ -12,7 +12,6 @@
 html, body {
     height: 100%;
     margin: 0;
-    padding: 0;
     position: relative;
     color: white;
 }
@@ -23,7 +22,7 @@ html, body {
     top: 50%;
     transform: translate(-50%, -50%);
 
-    width: 462px;
+    width: 40%;
     height: 60px;
     background-color: var(--theme-Color);
 
@@ -37,7 +36,6 @@ html, body {
     width: 60px;
     background-color: var(--theme-Color);
     border-radius: 50%;
-    display: inline-block;
     text-align: center;
 
     box-sizing: border-box;

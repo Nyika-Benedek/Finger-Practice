@@ -117,26 +117,6 @@ body, html {
     transition: 0.5s;
 }
 
-#d1:hover > .bg {
-    background-color: var(--colorHover);
-}
-
-#d2:hover > .bg {
-    background-color: var(--colorHover);
-}
-
-#d3:hover > .bg {
-    background-color: var(--colorHover);
-}
-
-#d4:hover > .bg {
-    background-color: var(--colorHover);
-}
-
-#d5:hover > .bg {
-    background-color: var(--colorHover);
-}
-
-#d6:hover > .bg {
+.d:hover > .bg {
     background-color: var(--colorHover);
 }

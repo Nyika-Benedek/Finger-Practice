@@ -7,27 +7,32 @@
     <title>Feladat7</title>
 </head>
 <body>
-    <div class="wrapper">
-        <p class="title"> Ki volt a Rubik kocka feltalálója?</p>
-        <div class="answers">
-            <input id="rb1" type="radio" name="radio-Group">
-            <label for="rb1">Erő Rubik</label>
+    <form action="/action_page.php">
+        <div class="wrapper">
+            <p class="title"> Ki volt a Rubik kocka feltalálója?</p>
+            <div class="answers">
+                <div class="answer-button">
+                    <input id="rb1" type="radio" name="radio-group" value="Erő Rubik">
+                    <label for="rb1">Erő Rubik</label>
+                </div>
 
-            <input id="rb2" type="radio" name="radio-Group">
-            <label for="rb2">Ernő Rubik</label>
+                <div class="answer-button">
+                    <input id="rb2" type="radio" name="radio-group" value="Ernő Rubik">
+                    <label for="rb2">Ernő Rubik</label>
+                </div>
 
-            <input id="rb3" type="radio" name="radio-Group">
-            <label for="rb3">Ernő Rubin</label>
+                <div class="answer-button">
+                    <input id="rb3" type="radio" name="radio-group" value="Ernő Rubin">
+                    <label for="rb3">Ernő Rubin</label>
+                </div>
 
-            <input id="rb4" type="radio" name="radio-Group">
-            <label for="rb4">Erdősy Rubin</label>
-
-            <!--button class="answer">Erő Rubik</button>
-            <button class="answer">Ernő Rubik</button>
-            <button class="answer">Ernő Rubin</button>
-            <button class="answer">Erdősy Rubin</button-->
+                <div class="answer-button">
+                    <input id="rb4" type="radio" name="radio-group" value="Erdősy Rubin">
+                    <label for="rb4">Erdősy Rubin</label>
+                </div>
+            </div>
+            <button class="vote">Szavazás</button>
         </div>
-        <button class="vote">Szavazás</button>
-    </div>
+    </form>
 </body>
 </html>

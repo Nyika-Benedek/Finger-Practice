@@ -9,7 +9,7 @@ html, body {
     font-family: Roboto;
 }
 
-.div-Box {
+.div-box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -37,7 +37,7 @@ html, body {
     margin-right: 12.07px;
 }
 
-.input-Text {
+.input-text {
     width: 400px;
     height: 50px;
     margin-top: 20px;
@@ -59,10 +59,6 @@ html, body {
   
 ::-ms-input-placeholder { /* Microsoft Edge */
     color: black;
-}
-
-.inputCheckBox {
-    background: var(--color);
 }
 
 #checkb {
@@ -95,7 +91,7 @@ html, body {
     color: white;
 }
 
-.big-Button {
+.big-button {
     position: relative;
     left: 50%;
     transform: translate(-50%);
@@ -124,15 +120,15 @@ html, body {
     transition: 0.5s;
 }
 
-.big-Button:hover {
+.big-button:hover {
     background-color: rgb(35, 163, 35);
 }
 
-.button-Icon {
+.button-icon {
     transform: translate(0, -2px);
 }
 
-.AT {
+.at {
     font-size: smaller;
     margin: 0;
     margin-top: 10px;

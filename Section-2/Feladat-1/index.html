@@ -8,13 +8,16 @@
     <title>Feladat1</title>
 </head>
 <body>
-    <div class="div-Box">
-        <i class="far fa-envelope fa-3x icon"></i><a class="title">Hírlevél</a><br>
-        <input type="text" class="input-Text" placeholder="Név"><br>
-        <input type="text" class="input-Text" placeholder="E-mail cím"><br>
-        <!--input type="checkbox" class="inputCheckBox">Elfogadom az <a href="adatkezelesi tajekoztato.png">adatkezelési tájékoztatót.</a></input-->
-        <p class="AT"><input type="checkbox" id="checkb">Elfogadom az <a href="adatkezelesi tajekoztato.png" class="link">adatkezelési tájékoztatót.</a></p>
-        <button class="big-Button"><i class="fas fa-bell fa-xs button-Icon"></i> Feliratkozás</button>
-    </div>
+    <form action="/action_page.php">
+        <div class="div-box">
+            <i class="far fa-envelope fa-3x icon"></i><a class="title">Hírlevél</a>
+            <div class="input-container">
+                <input type="text" name="name" class="input-text" placeholder="Név">
+                <input type="text" name="email" class="input-text" placeholder="E-mail cím">
+                <p class="at"><input type="checkbox" id="checkb">Elfogadom az <a href="adatkezelesi tajekoztato.png" class="link">adatkezelési tájékoztatót.</a></p>
+            </div>
+            <button class="big-button"><i class="fas fa-bell fa-xs button-icon"></i> Feliratkozás</button>
+        </div>
+    </form>
 </body>
 </html>

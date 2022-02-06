@@ -11,7 +11,7 @@ body, html {
 }
 
 .wrapper {
-    position: relative;
+    position: absolute;
     width: 60%;
     height: fit-content;
     left: 50%;
@@ -80,10 +80,10 @@ body, html {
 
 /* Making answer buttons behave like radio buttons*/
 
-input[name="radio-Group"] {
+input[name="radio-group"] {
     display: none;
 }
- input[name="radio-Group"]+label {
+ input[name="radio-group"]+label {
     height: 65px;
 
     color: white;
@@ -98,6 +98,6 @@ input[name="radio-Group"] {
     line-height: 20px;
 }
 
-input[name="radio-Group"]:checked+label {
+input[name="radio-group"]:checked+label {
     background-color: #17c06b;
 }

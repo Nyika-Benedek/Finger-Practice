@@ -4,12 +4,10 @@
 }
 
 html, body {
-    height: 90%;
-    position: relative;
+    height: 100%;
 }
 
 .list {
-    /*-webkit-text-stroke: 0px white;*/
     color: white;
     background-color: rgb(54, 54, 54);
     position: relative;
@@ -27,7 +25,6 @@ html, body {
 .is-First-Child:first-child {
     position: relative;
     background-color: var(--green);
-    /*transform: translate(-50%,-50%);*/
 }
 
 .circle {

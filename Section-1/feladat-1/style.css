@@ -1,4 +1,4 @@
-* {
+:root {
     --theme-Color: #006633;
     --font-Color: #55AE3A;
 }
@@ -7,40 +7,35 @@ body, html {
     font-family: Roboto;
     position: relative;
     margin: 0;
-    padding: 0;
-    text-align: center;
     height: 100%;
 }
 
 header {
     background-color: var(--theme-Color);
-    padding: 0;
-    margin: 0;
     width: 100%;
     height: 35px;
-    position: relative;
+    text-align: center;
 }
 
-.header-Title {
+.header-title {
     font-weight: 900;
     font-size: 24px;
+    display: inline;
 }
 
-.header-Ico {
+.header-ico {
     transform: translate(-30%, -15%);
 }
 
-.sloping-Frame {
+.sloping-frame {
     position: relative;
     height: 35px;
     width: 90px;
     padding-top: 5px;
     background-color: white;
-    margin: auto;
-    margin-top: 0;
 }
 
-.sloping-Frame::before {
+.sloping-frame::before {
     top: 0;
     content: " ";
     position: absolute;
@@ -49,7 +44,7 @@ header {
     border-right: 1.5rem solid white;
 }
 
-.sloping-Frame::after {
+.sloping-frame::after {
     top: 0;
     content: " ";
     position: absolute;
@@ -59,7 +54,6 @@ header {
 }
 
 .title {
-    font-weight: bold;
     color: var(--theme-Color);
     margin: 0;
     margin-top: 9px;
@@ -74,12 +68,12 @@ div {
     margin: auto;
 }
 
-.display-By-Rows {
-    display: block;
+.display-by-rows {
+
     width: fit-content;
 }
 
-.fancy-Input {
+.fancy-input {
     padding: 8px;
     border-radius: 1rem;
     border: 0.6px solid var(--theme-Color);
@@ -89,13 +83,14 @@ div {
     margin-bottom: 14px;
 }
 
-.fancy-Input::placeholder {
+.fancy-input::placeholder {
     color: var(--font-Color);
 }
 
-.asd {
+.wrapper {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #fff;
 }

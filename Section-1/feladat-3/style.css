@@ -1,4 +1,4 @@
-* {
+:root {
     --theme-Color: #006633;
     --orange: #DF7E24;
 }
@@ -7,11 +7,10 @@ html, body {
     position: relative;
     margin: 0;
     height: 100%;
-
-    
+    font-family: Roboto;
 }
 
-.grid-Container {
+.grid-container {
     display: grid;
     grid-template-columns: 1fr 5fr 3fr 2fr;
     grid-template-rows: 1fr;
@@ -23,12 +22,11 @@ html, body {
     position: relative;
     top: 50%;
     transform: translate(0, -50%);
+    background-color: #fff;
 }
 
 .img {
     grid-area: img;
-    margin: 0;
-    padding: 0;
     height: 120px;
 }
 
@@ -36,11 +34,9 @@ html, body {
     grid-area: title;
     width: 100%;
     margin: auto;
+
     font-weight: bold;
     text-align: left;
-
-    font-family: Roboto;
-    font-style: normal;
     font-weight: bold;
     font-size: 28px;
 }
@@ -49,13 +45,11 @@ html, body {
     grid-area: date;
     margin: auto;
 
-    font-family: Roboto;
-    font-style: normal;
     font-weight: bold;
     font-size: 28px;
 }
 
-.button-Grid {
+.button-grid {
     grid-area: buttonGrid;
     margin: auto;
 }

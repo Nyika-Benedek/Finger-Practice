@@ -8,7 +8,7 @@ html, body {
     font-family: Roboto;
 }
 
-.grid-Container {
+.grid-container {
     display: grid;
     grid-template-columns: 3fr 3fr;
     grid-template-rows: 2fr;
@@ -16,7 +16,7 @@ html, body {
         "bigProfile smallProfile";
 }
 
-.big-Profile {
+.big-profile {
     position: relative;
     width: 300px;
     height: 300px;
@@ -24,36 +24,25 @@ html, body {
     margin: auto;
     background-color: var(--theme-Color);
     border-radius: 44px;
-    padding-bottom: 0;
 }
 
-.big-Profile-Pic {
+.big-profile-pic {
     margin-top: 22px;
     margin-left: 32px;
-    margin-right: 33px;
-    margin-bottom: 0;
     border-radius: 44px 44px 0px 0px;
     /*background-color: green;*/
 }
 
-.big-Profile p {
+.big-profile h1 {
     color: white;
-    font-size: larger;
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
     margin-top: 4.74px;
     margin-bottom: 6.4px;
-    height: min-content;
     text-align: center;
-
-    font-style: normal;
-    font-weight: bold;
     font-size: 26px;
     line-height: 20px;
 }
 
-.small-Profile {
+.small-profile {
     grid-area: smallProfile;
     margin: auto;
     width: 300px;
@@ -61,47 +50,35 @@ html, body {
     position: relative;
     background-color: var(--theme-Color);
     text-align: center;
-    padding: 0;
     padding-bottom: 5.74px;
     border-radius: 36px;
 }
 
-.small-Profile-Pic {
+.small-profile-pic {
     position: relative;
     border-radius: 50%;
     border: 4px solid var(--theme-Color);
-    margin: 0;
-    padding: 0;
 }
 
 .name, .rank {
-    position: relative;
     color: white;
-    font-size: larger;
 }
 
 .name{
-
     font-weight: bold;
     margin: 0;
-    padding: 0;
 
-    font-style: normal;
-    font-weight: bold;
     font-size: 20px;
     line-height: 20px;
 }
 
 .rank{
     margin: 0;
-    padding: 0;
 
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 20px;
 }
 
-.small-Profile-Content {
+.small-profile-content {
     transform: translate(0, -55.79px);
 }

@@ -1,4 +1,4 @@
-* {
+:root {
     --theme-Color: #006633;
     --megse-Color: #BFBFBF;
     --delete-Color: #EF3A43;
@@ -10,7 +10,7 @@ html, body {
     font-family: Roboto;
 }
 
-.alert-Div {
+.alert-div {
     color: white;
     background-color: var(--theme-Color);
     text-align: center;
@@ -19,7 +19,6 @@ html, body {
     border-radius: 16px;
     width: 500px;
     height: 100px;
-    margin: 0;
     position: relative;
     top: 50%;
     left: 50%;
@@ -32,8 +31,6 @@ html, body {
 }
 
 .message {
-    margin: 0;
-    padding: 0;
     margin-top: 12px;
     margin-bottom: 13px;
 }
@@ -44,13 +41,12 @@ html, body {
     border-radius: 8px;
     margin-right: 1rem;
     font-family: Work Sans;
-    font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 24px;  
 }
 
-#button-Megse {
+#button-megse {
     width: 114px;
     height: 40px;
     color: white;
@@ -60,12 +56,12 @@ html, body {
     transition: 0.5s;
 }
 
-#button-Megse:hover {
+#button-megse:hover {
     background-color: lightgray;
     
 }
 
-#button-Delete {
+#button-delete {
     width: 88px;
     height: 40px;
     color: #FFFFFF;
@@ -75,6 +71,6 @@ html, body {
     transition: 0.5s;
 }
 
-#button-Delete:hover {
+#button-delete:hover {
     background-color: lightcoral;
 }

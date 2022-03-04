@@ -23,7 +23,6 @@ html, body {
 }
 
 .is-first-child:first-child {
-    position: relative;
     background-color: var(--green);
 }
 
@@ -32,9 +31,11 @@ html, body {
     width: 60px;
     background-color: var(--theme-Color);
     border-radius: 50%;
-    display: inline-block;
-    text-align: center;
 
-    box-sizing: border-box;
-    padding-top: 21.03px;
+    border: none;
   }
+
+.icon {
+    color: white;
+    font-size: 28px;
+}

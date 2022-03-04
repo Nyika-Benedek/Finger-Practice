@@ -3,10 +3,13 @@
     --color2: rgb(85, 174, 58);
 }
 
-body, html {
-    height: 100%;
+* {
     margin: 0;
     padding: 0;
+}
+
+body, html {
+    height: 100%;
     position: relative;
     color: white;
 }
@@ -18,11 +21,6 @@ body, html {
     box-sizing: border-box;
 }
 
-.icon {
-    margin: 0;
-    padding: 0;
-}
-
 
 .container {
     position: relative;
@@ -31,6 +29,12 @@ body, html {
     /*
     grid-template-columns: 3rem 5rem repeat(7, minmax(50px, auto)) 3rem;
     grid-template-rows: 1fr;*/
+}
+
+.button {
+    color: inherit;
+    background-color: inherit;
+    border: none;
 }
 
 #i1 {

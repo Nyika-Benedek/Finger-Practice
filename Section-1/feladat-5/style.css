@@ -22,7 +22,7 @@ html, body {
     justify-content: space-between;
 }
 
-.is-first-child:first-child {
+.circle:first-child {
     background-color: var(--green);
 }
 

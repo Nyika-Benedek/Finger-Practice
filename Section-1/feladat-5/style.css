@@ -1,6 +1,12 @@
-* {
+:root {
     --theme-Color: #363636;
     --green: #55AE3A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {

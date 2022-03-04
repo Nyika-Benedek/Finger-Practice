@@ -4,8 +4,13 @@
     --delete-Color: #EF3A43;
 }
 
-html, body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
@@ -27,7 +32,6 @@ html, body {
 
 .alert {
     font-weight: bold;
-    margin: 0;
 }
 
 .message {

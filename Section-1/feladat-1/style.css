@@ -3,10 +3,15 @@
     --font-Color: #55AE3A;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body, html {
     font-family: 'Roboto', sans-serif;
     position: relative;
-    margin: 0;
     height: 100%;
 }
 

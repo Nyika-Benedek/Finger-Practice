@@ -1,5 +1,11 @@
-* {
+:root {
     --theme-Color: #006633;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
@@ -66,15 +72,11 @@ html, body {
 
 .name{
     font-weight: bold;
-    margin: 0;
-
     font-size: 20px;
     line-height: 20px;
 }
 
 .rank{
-    margin: 0;
-
     font-size: 16px;
     line-height: 20px;
 }

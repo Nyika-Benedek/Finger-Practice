@@ -54,7 +54,7 @@ html, body {
     margin: auto;
 }
 
-#b1, #b3, #b4 {
+.green-button {
     color: white;
     background-color: rgb(0, 102, 51);
     border-radius: 50%;
@@ -68,11 +68,11 @@ html, body {
     transition: 0.5s;
 }
 
-#b1:hover, #b3:hover, #b4:hover {
+.green-button:hover {
     background-color: lightgreen;
 }
 
-#b2 {
+.orange-button {
     color: white;
     background-color: rgb(223, 126, 36);
     border-radius: 100%;
@@ -86,6 +86,6 @@ html, body {
     transition: 1s;
 }
 
-#b2:hover {
+.orange-button:hover {
     background-color: lightsalmon;
 }

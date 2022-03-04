@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6cfaa4f627.js" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
     <title>Feladat2</title>
 </head>
 <body>
     <header class="header">
-        <i class="fas fa-bars icon" id="bars"></i>
-        <i class="far fa-comment-dots icon size-small" id="contact"></i>
+        <button class="icon"><i class="fas fa-bars icon" id="bars"></i></button>
+        <button class="icon"><i class="far fa-comment-dots icon size-small" id="contact"></i></button>
         <img src="icon.png" id="img">
         <div class="buttons-container size-big">
-            <i class="fas fa-microphone icon underline" id="interjuk">Interjúk</i>
-            <i class="fas fa-portrait icon underline" id="portrek">Portrék</i>
-            <i class="fas fa-code-branch icon underline" id="elemzesek">Elemzések</i>
-            <i class="fas fa-book-reader icon underline" id="kultura">Kultúra</i>
+            <a class="underline"><i class="fas fa-microphone icon" id="interjuk"></i>Interjúk</a>
+            <a class="underline"><i class="fas fa-portrait icon" id="portrek"></i>Portrék</a>
+            <a class="underline"><i class="fas fa-code-branch icon" id="elemzesek"></i>Elemzések</a>
+            <a class="underline"><i class="fas fa-book-reader icon" id="kultura"></i>Kultúra</a>
         </div>
 
         <!--a class="space"></a-->
 
         <div class="options-container">
-            <i class="fas fa-search icon size-medium" id="search"></i>
-            <i class="fas fa-comments icon size-medium" id="comment"></i>
-            <i class="fas fa-bell icon size-medium" id="bell"></i>
-            <i class="fas fa-question-circle icon size-medium" id="help"></i>
+            <button class="icon" id="search"><i class="fas fa-search icon size-medium"></i></button>
+            <button class="icon" id="comment"><i class="fas fa-comments icon size-medium"></i></button>
+            <button class="icon" id="bell"><i class="fas fa-bell icon size-medium"></i></button>
+            <button class="icon" id="help"><i class="fas fa-question-circle icon size-medium"></i></button>
 
-            <i class="fas fa-sliders-h fa-rotate-270 icon profile" id="sliders"></i>
-            <img src="profilePic.jpg" id="profile-pic">
+            <button class="icon" id="sliders"><i class="fas fa-sliders-h fa-rotate-270 icon profile"></i></button>
+            <button class="icon" id="profile-pic"><img src="profilePic.jpg" ></button>
         </div>
     </header>
 </body>

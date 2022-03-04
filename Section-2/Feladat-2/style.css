@@ -3,9 +3,14 @@
     --color2: rgb(85, 174, 58);
 }
 
-body, html {
+* {
     margin: 0;
+    padding: 0;
+}
+
+body, html {
     font-size: larger;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -23,6 +28,10 @@ body, html {
 
 .icon {
     margin: auto;
+    color: white;
+    background-color: inherit;
+    font-size: 30px;
+    border: none;
 }
 
 .underline:hover {
@@ -44,11 +53,13 @@ body, html {
     grid-area: buttons;
 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(130px, 130px));
+    grid-template-columns: repeat(auto-fill, minmax(140px, 140px));
     grid-template-areas: 
         "interjuk portrek elemzesek kultura";
     
     grid-auto-flow: column;
+
+    align-items: center;
 }
 
 #interjuk {
@@ -119,6 +130,9 @@ body, html {
 
 #profile-pic {
     grid-area: pic;
+}
+
+.options-container img {
     height: 40px;
     border-radius: 50%;
     margin: auto;

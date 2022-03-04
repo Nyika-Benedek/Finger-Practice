@@ -17,7 +17,7 @@ body, html {
 .header {
     background-color: var(--color);
     height: 56px;
-    width: 1720px;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -25,7 +25,8 @@ body, html {
 .container {
     position: relative;
     top: 16px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 3fr 3fr 2fr 3fr 2fr 2fr 1fr; 
     /*
     grid-template-columns: 3rem 5rem repeat(7, minmax(50px, auto)) 3rem;
     grid-template-rows: 1fr;*/
@@ -37,6 +38,7 @@ body, html {
     border: none;
 }
 
+/*
 #i1 {
     margin-left: 13px;
     margin-right: 44px;
@@ -77,3 +79,4 @@ body, html {
 #i10 {
     margin-right: 15px;
 }
+*/

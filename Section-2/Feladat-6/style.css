@@ -2,12 +2,15 @@
     --theme-Color: #006633;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body, html {
     height: 100%;
     position: relative;
-    margin: 0;
-
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 }
 
 .wrapper {
@@ -21,11 +24,16 @@ body, html {
 
     display: flex;
     flex-direction: column;
+    gap: 0;
+}
+
+#img {
+    width: 700px;
+    height: 362px;
 }
 
 .img {
-    width: 700px;
-    height: 362px;
+    object-fit:cover;
 }
 
 .headline {

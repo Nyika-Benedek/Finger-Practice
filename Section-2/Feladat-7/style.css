@@ -105,3 +105,9 @@ input[name="radio-group"]:checked+label {
         width: 500px;
     }
 }
+
+@media (max-width: 620px) {
+    .wrapper {
+        width: 260px;
+    }
+}

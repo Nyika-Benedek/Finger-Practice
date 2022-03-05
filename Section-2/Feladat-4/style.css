@@ -80,9 +80,7 @@ body, html {
 .button {
     width: 30px;
     height: 30px;
-    color: inherit;
     background-color: var(--color);
-    border: none;
     border-radius: 50%;
 
     display: flex;

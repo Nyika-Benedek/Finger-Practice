@@ -14,16 +14,19 @@ body, html {
 }
 
 .header {
-    position: relative;
     background-color: var(--color);
     color: white;
     height: 4rem;
 
+    display:  flex;
+    gap: 16px;
+
+    /*
     display: grid;
     grid-template-columns: 0.3fr 0.5fr 5fr 2fr ;
     grid-template-areas: 
         "bars img buttons options margo";
-        grid-gap: 0.5rem;
+        grid-gap: 0.5rem;*/
 }
 
 .icon {
@@ -38,12 +41,13 @@ body, html {
     text-decoration: underline;
 }
 
+/*
 #bars {
     grid-area: bars;
 }
+*/
 
 #img {
-    grid-area: img;
     height: 40px;
     width: 200px;
     margin: auto;
@@ -56,6 +60,10 @@ img {
 
 /*Buttons*/
 .buttons-container {
+    display: flex;
+    align-items: center;
+
+    /*
     grid-area: buttons;
 
     display: grid;
@@ -65,9 +73,9 @@ img {
     
     grid-auto-flow: column;
 
-    align-items: center;
+    align-items: center;*/
 }
-
+/*
 #interjuk {
     grid-area: interjuk;
 }
@@ -83,23 +91,26 @@ img {
 #kultura {
     grid-area: kultura;
 }
-
+*/
 
 
 /*Options*/
 
 .options-container {
+
+    /*
     grid-area: options;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, min(40px));
     grid-template-areas: 
     "pic sliders help bell comment search";
-
-    direction:rtl;
     grid-auto-flow: column;
+    */
+    display: flex;
+    flex-direction: row;
 }
-
+/*
 #search {
     grid-area: search;
 }
@@ -116,7 +127,7 @@ img {
     grid-area: help;
 }
 
-
+*/
 
 
 /*
@@ -129,7 +140,7 @@ img {
     grid-template-areas: 
     "sliders pic";
 }*/
-
+/*
 #sliders {
     grid-area: sliders;
 }
@@ -137,7 +148,7 @@ img {
 #profile-pic {
     grid-area: pic;
 }
-
+*/
 .options-container img {
     height: 40px;
     border-radius: 50%;
@@ -155,11 +166,13 @@ img {
     }
 
     .header {
+        display: flex;
+        /*
         display: grid;
         grid-template-columns: 0.12fr 0.4fr 2fr ;
         grid-template-areas: 
             "bars img options margo";
-            grid-gap: 0.5rem;
+            grid-gap: 0.5rem;*/
     }
 }
 

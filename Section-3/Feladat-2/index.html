@@ -3,51 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6cfaa4f627.js" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
     <title>Feladat2</title>
 </head>
 <body>
-    <div class="header1">
-        <i class="fas fa-bars icon" id="bars"></i>
-        <i class="far fa-comment-dots icon size-Small" id="contact"></i><br>
-        <img src="icon.png" id="img">
-        <div class="buttons-Container size-Big">
-            <i class="fas fa-microphone icon" id="interjuk">Interjúk</i><br>
-            <i class="fas fa-portrait icon" id="portrek">Portrék</i><br>
-            <i class="fas fa-code-branch icon" id="elemzesek">Elemzések</i><br>
-            <i class="fas fa-book-reader icon" id="kultura">Kultúra</i><br>
+    <div class="header">
+        <button class="icon" id="bars"><i class="fas fa-bars icon" ></i></button>
+        <button class="icon size-small" id="contact"><i class="far fa-comment-dots icon" ></i></button>
+        <div id="img">
+            <img id="img-content" src="icon.png">
+        </div>
+        <div class="button-container size-big">
+            <a class="underline"><i class="fas fa-microphone icon"></i><span class="underline-content">Interjúk</span></a>
+            <a class="underline"><i class="fas fa-portrait icon"></i><span class="underline-content">Portrék</span></a>
+            <a class="underline"><i class="fas fa-code-branch icon"></i><span class="underline-content">Elemzések</span></a>
+            <a class="underline"><i class="fas fa-book-reader icon"></i><span class="underline-content">Kultúra</span></a>
         </div>
 
         <!--a class="space"></a-->
 
-        <div class="options-Container">
-            <i class="fas fa-search icon size-Medium" id="search"></i><br>
-            <i class="fas fa-comments icon size-Medium" id="comment"></i><br>
-            <i class="fas fa-bell icon size-Medium" id="bell"></i><br>
-            <i class="fas fa-question-circle icon size-Medium" id="help"></i><br>
+        <div class="options-container">
+            <button class="icon size-medium" id="search"><i class="fas fa-search icon "></i></button>
+            <button class="icon size-medium" id="comment"><i class="fas fa-comments icon "></i></button>
+            <button class="icon size-medium" id="bell"><i class="fas fa-bell icon "></i></button>
+            <button class="icon size-medium" id="help"><i class="fas fa-question-circle icon "></i></button>
 
-            <i class="fas fa-sliders-h fa-rotate-270 icon profile" id="sliders"></i><br>
-            <img src="profilePic.jpg" id="profile-Pic">
+            <button class="icon" id="sliders"><i class="fas fa-sliders-h fa-rotate-270 icon profile"></i></button>
+            <button class="icon" id="profile-pic"><img src="profilePic.jpg" ></button>
         </div>
     </div>
 
-    <div class="header2">
-        <div class="g1">
-        <i class="fas fa-football-ball fa-2x icon2 bg"></i>
-        <div class="bg"><img src="dp.png" alt="detroit" id="dp"></div>
-        <img src="profilePic.jpg" alt="facial img" id="face">
+    <div class="header">
+        <div class="section1">
+            <i class="fas fa-football-ball fa-2x icon2 icon icon-with-bg"></i>
+            <button id="header2-detroit-pic" class="icon icon-with-bg">
+                <img src="dp.png" alt="detroit" id="dp">
+            </button>
+            <button id="header2-profile-pic" class="icon">
+                <img src="profilePic.jpg" alt="facial img" id="face">
+            </button>
         </div>
 
-        <div class="g2">
-            <i class="fas fa-search icon2" id="search-Icon"></i>
-            <div class="vertical-Line"></div>
-            <input type="search" class="search" placeholder="Search">
+        <div class="section2">
+            <div class="search-container">
+                <i class="fas fa-search icon" id="search-icon"></i>
+                <div class="vertical-line"></div>
+                <input type="search" class="search" placeholder="Search">
+            </div>
         </div>
 
-        <input type="text" class="g3 date" value="2020/11/28">
+        <div class="date-container">
+            <span id="arrow1" class="arrow-button">	&#8810;</span>
+            <span id="arrow2" class="arrow-button">&#60;</span>
+            <input type="text" class="section3 date" value="2020/11/28">
+            <span id="arrow3" class="arrow-button">&#62;</span>
+            <span id="arrow4" class="arrow-button">&#8811;</span>
+        </div>
 
-        <div class="g4">
+        <div class="section4">
             <i class="far fa-newspaper fa-2x bg paper icon2"></i>
         </div>
     </div>

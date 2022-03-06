@@ -16,6 +16,7 @@ html, body {
 
 .div-box {
     position: absolute;
+    display: block;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -29,15 +30,16 @@ html, body {
     padding: 36px 50px 36px 50px;
 }
 
+.title-div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 .title {
     font-weight: bold;
     font-size: 32px;
     line-height: 37px;
-}
-
-.icon {
-    transform: translate(0, 6px);
-    margin-right: 12px;
 }
 
 .input-text {
@@ -94,15 +96,16 @@ html, body {
 }
 
 .big-button {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
 
     width: 240px;
     height: 50px;
 
     color: white;
-    text-align: center;
     background-color: var(--color2);
     margin-top: 30px;
     border-radius: 44px;

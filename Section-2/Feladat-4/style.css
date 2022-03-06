@@ -47,8 +47,13 @@ body, html {
 }
 
 .work-place {
+    padding-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 16px;
     line-height: 19px;
+    gap: 4px;
 }
 
 .bs {
@@ -67,15 +72,15 @@ body, html {
     grid-template-columns: repeat(6, minmax(20px, 40px));
 }
 
-.small-bg {
-    height: 22px;
+.small-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 22px;
+    height: 22px;
     background-color: var(--color);
     border-radius: 50%;
-    display: inline-block;
-    transform: translate(0, 5px);
 }
-
 
 .button {
     width: 30px;

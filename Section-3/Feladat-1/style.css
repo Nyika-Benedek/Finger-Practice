@@ -18,6 +18,7 @@ html, body {
 /* --- WRAPPER --- */
 .login-container {
     position: relative;
+    box-sizing: unset;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -28,12 +29,31 @@ html, body {
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 60px 14px;
+    padding: 60px 0;
     gap: 22px;
+
     background-color: #FFFFFF;
 
     border: solid black 1px;
     border-radius: 8px;
+}
+
+.login-container-section1 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    width: 90%;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.login-container-section2 {
+    display: flex;
+    flex-flow: column;
+    gap: 22px;
+    width: 90%;
 }
 
 
@@ -132,6 +152,30 @@ html, body {
 
 }
 
+.email-container {
+    position: relative
+}
+
+#email:invalid {
+    border: 2px solid red;
+}
+
+.invalid-email {
+    display: none;
+    position: absolute;
+    color: red;
+
+    font-size: 14px;
+    line-height: 16px;
+
+    top: 37px;
+    left: 8px;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid ~ .invalid-email {
+    display: flex;	
+}
+
 #email::placeholder {
     content: "Email";
     font-family: inherit;
@@ -224,11 +268,10 @@ html, body {
   .slider:before {
     position: absolute;
     content: "";
-    height: 17px;
-    width: 17px;
-    left: 2px;
-    bottom: 1.5px;
-    background-color: white;
+    height: 20px;
+    width: 20px;
+    left: 0;
+    background-color: var(--second-color);
     -webkit-transition: .4s;
     transition: .5s;
   }
@@ -238,13 +281,13 @@ html, body {
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px var(--theme-Color);
+    box-shadow: 0 0 1px var(--second-Color);
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(12px);
-    -ms-transform: translateX(12px);
-    transform: translateX(12px);
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
     background-color: var(--second-color);
   }
 

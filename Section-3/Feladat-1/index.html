@@ -13,47 +13,55 @@
 </head>
 <body>
     <form action="#" class="login-container">
-        <div class="greeting-container">
-            <p class="greeting">Üdv újra!</p>
-            <p class="subgreeting">Lépj be a fiókodba</p>
-        </div>
-        
-        <div class="log-or-sign-in">
-            <button class="fancy-button registration-button"> regisztráció</button>
-            <button class="fancy-button login-button">belépés</button>
-        </div>
-
-        <div class="login-input-container">
-            <input class="login-input-container-element fancy-input" id="email" type="email" placeholder="Email">
-            <div class="login-input-container-element">
-                <input class="fancy-input" id="password" type="password" placeholder="Jelszó">
-                <span class="material-icons visibility" id="visibility-icon">
-                    visibility
-                </span>
+        <div class="login-container-section1">
+            <div class="greeting-container">
+                <p class="greeting">Üdv újra!</p>
+                <p class="subgreeting">Lépj be a fiókodba</p>
             </div>
-            <p class="pw-reminder">Elfelejtetted a jelszavad?</p>
+            
+            <div class="log-or-sign-in">
+                <button class="fancy-button registration-button"> regisztráció</button>
+                <button class="fancy-button login-button">belépés</button>
+            </div>
+
+            <div class="login-input-container">
+                <div class="email-container">
+                    <input class="login-input-container-element fancy-input" id="email" type="email" placeholder="Email">
+                    <span class="invalid-email">Hibás e-mail cím</span>
+                </div>
+                <div class="login-input-container-element">
+                    <input class="fancy-input" id="password" type="password" placeholder="Jelszó">
+                    <span class="material-icons visibility" id="visibility-icon">
+                        visibility
+                    </span>
+                </div>
+                <a class="pw-reminder">Elfelejtetted a jelszavad?</a>
+            </div>
+
+            <div class="remember">
+                <!-- Rounded switch -->
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                Emlékezz rám
+            </div>
+
+            <!--button class="submit">bejelentkezés</button-->
+            <input type="submit" class="submit" value="bejelentkezés">
         </div>
 
-        <div class="remember">
-            <!-- Rounded switch -->
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-            </label>
-            Emlékezz rám
-        </div>
 
-        <!--button class="submit">bejelentkezés</button-->
-        <input type="submit" class="submit" value="bejelentkezés">
-        
         <!-- Formated HR -->
         <div class="strike">
             <span>vagy</span>
         </div>
 
-        <div class="login-with-other fa-lg">
-            <a class="button"><i class="fab fa-facebook"></i></a>
-            <a class="button"><i class="fab fa-google"></i></a>
+        <div class="login-container-section2">
+            <div class="login-with-other fa-lg">
+                <a class="button"><i class="fab fa-facebook"></i></a>
+                <a class="button"><i class="fab fa-google"></i></a>
+            </div>
         </div>
     </form>
 

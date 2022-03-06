@@ -33,6 +33,8 @@ body, html {
 }
 
 .img {
+    width: 100%;
+    height: 100%;
     object-fit:cover;
 }
 
@@ -44,16 +46,16 @@ body, html {
 
     display: grid;
     grid-template-columns: 6fr 1fr 1fr 1fr;
-    grid-template-areas: 
-        "headline ago views date";
+
+    color: white;
 }
 
 .sloping-frame {
-    grid-area: headline;
     position: relative;
     height: 100%;
     width: fit-content;
     background-color: white;
+    color: black;
 
     display: flex;
     align-items: center;
@@ -90,8 +92,6 @@ body, html {
 }
 
 .ago {
-    grid-area: ago;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,12 +100,9 @@ body, html {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    color: white;
 }
 
 .views {
-    grid-area: views;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,12 +110,9 @@ body, html {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    color: white;
 }
 
 .date {
-    grid-area: date;
-
     display: flex;
     align-items: center;
 
@@ -126,7 +120,6 @@ body, html {
     font-weight: bold;
     font-size: 20px;
     line-height: 23px;
-    color: white;
     margin-right: 5px;
 }
 

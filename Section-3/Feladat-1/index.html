@@ -3,33 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6cfaa4f627.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Feladat1</title>
 </head>
 <body>
-    <div class="wrapper">
-        <p class="greetings">Üdv újra!</p>
-        <p class="subgreetings">Lépj be a fiókodba</p>
-
-        <div class="Log-Or-Sign-In">
-            <button class="registration"> regisztráció</button>
-            <button class="login">belépés</button>
+    <form action="#" class="login-container">
+        <div class="greeting-container">
+            <p class="greeting">Üdv újra!</p>
+            <p class="subgreeting">Lépj be a fiókodba</p>
+        </div>
+        
+        <div class="log-or-sign-in">
+            <button class="fancy-button registration-button"> regisztráció</button>
+            <button class="fancy-button login-button">belépés</button>
         </div>
 
-
-        <input class="fancy-Input exception" id="email" type="email" placeholder="Email">
-        <p class="exception-Message">Hibás e-mail cím</p>
-        <div id="password-Div">
-            <input class="fancy-Input" id="password" type="password" placeholder="Jelszó">
-            <span class="material-icons visibility" id="visibility-Icon">
-                visibility
-            </span>
+        <div class="login-input-container">
+            <input class="login-input-container-element fancy-input" id="email" type="email" placeholder="Email">
+            <div class="login-input-container-element">
+                <input class="fancy-input" id="password" type="password" placeholder="Jelszó">
+                <span class="material-icons visibility" id="visibility-icon">
+                    visibility
+                </span>
+            </div>
+            <p class="pw-reminder">Elfelejtetted a jelszavad?</p>
         </div>
-
-
-        <p class="pw-Reminder">Elfelejtetted a jelszavad?</p>
 
         <div class="remember">
             <!-- Rounded switch -->
@@ -41,18 +44,18 @@
         </div>
 
         <!--button class="submit">bejelentkezés</button-->
-        <input type="submit" class="submit" name="bejelentkezés">
+        <input type="submit" class="submit" value="bejelentkezés">
         
         <!-- Formated HR -->
         <div class="strike">
             <span>vagy</span>
         </div>
 
-        <div class="login-With-Other fa-lg">
-            <i class="fab fa-facebook circle"></i>
-            <i class="fab fa-google circle"></i>
+        <div class="login-with-other fa-lg">
+            <a class="button"><i class="fab fa-facebook"></i></a>
+            <a class="button"><i class="fab fa-google"></i></a>
         </div>
-    </div>
+    </form>
 
 
 

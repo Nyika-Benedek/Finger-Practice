@@ -1,0 +1,454 @@
+* {
+    --theme-Color: #006633;
+    --color2: #55AE3A;
+    --error-Color: #EF3A43;
+    --input-Width: 600px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.wrapper {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+
+    width: 30%;
+    height: 40%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 60px 16px 16px;
+    padding-bottom: 54px;
+    border-radius: 8px;
+}
+
+.greetings {
+  margin: 0;
+  padding: 0;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.subgreetings {
+  margin: 0;
+  margin-top: 8px;
+  padding: 0;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.Log-Or-Sign-In {
+  width: var(--input-Width);
+  margin: auto;
+  margin-top: 21px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registration {
+  width: 50%;
+  height: 36px;
+
+  margin: 0;
+
+  border: 1px solid var(--color2);
+  box-sizing: border-box;
+  border-radius: 44px 0px 0px 44px;
+
+  color: var(--theme-Color);
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+
+  /* animation speed*/
+  transition: 0.5s;
+}
+
+.registration:hover {
+  background-color: rgb(161, 161, 161);
+}
+
+
+.login {
+  width: 50%;
+  height: 36px;
+
+  margin: 0;
+
+  background-color: var(--theme-Color);
+  border: 1px solid var(--color2);
+  box-sizing: border-box;
+  border-radius: 0px 44px 44px 0px;
+
+  color: white;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+
+  /* animation speed*/
+  transition: 0.5s;
+}
+
+.login:hover {
+  background-color: #00a753;
+}
+
+.fancy-Input {
+  width: var(--input-Width);
+  height: 36px;
+
+  border: 1px solid #006633;
+  box-sizing: border-box;
+  border-radius: 44px;
+
+  color: var(--color2);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.fancy-Input::placeholder {
+  color: var(--color2);
+}
+
+#email {
+  position: relative;
+  margin: auto;
+  margin-top: 29px;
+  margin-bottom: 0;
+  padding: 8px 6px 6px 9px;
+}
+
+.exception {
+  border: 1px solid var(--error-Color);
+}
+
+.exception-Message {
+  margin-top: 2px;
+  padding-left: 8px;
+  color: var(--error-Color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.exception::after {
+  position: absolute;
+  top: 38px;
+  left: 10px;
+
+  display: inline;
+  color: var(--error-Color);
+  content: "Hibás e-mail cím";
+}
+
+#password-Div {
+  position: relative;
+  display: flex;
+  margin: auto;
+  margin-top: 33px;
+  margin-bottom: 0;
+}
+
+#visibility-Icon {
+  position: absolute;
+  top: 6px;
+  right: 9px;
+
+  color: var(--color2);
+}
+
+#visibility-Icon {
+  cursor: pointer;
+}
+
+#password {
+  padding: 8px 6px 6px 9px;
+}
+
+.pw-Reminder {
+  text-decoration: underline;
+
+  margin: 0;
+  margin-top: 2px;
+  padding: 0;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.remember {
+  margin: 0;
+  margin-top: 65px;
+  margin-left: 14px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 12px;
+}
+
+.submit {
+  width: var(--input-Width);
+  height: 40px;
+  margin: auto;
+  margin-top: 18px;
+  margin-bottom: 0px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--theme-Color);
+  border: none;
+  border-radius: 44px;
+
+  color: white;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  /* animation speed*/
+  transition: 0.5s;
+  }
+
+  .submit:hover {
+    background-color: #00a753;
+  }
+
+.login-With-Other {
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  color: white;
+}
+
+.circle {
+  width: 38px;
+  height: 38px;
+
+  box-sizing: border-box;
+  background-color: var(--theme-Color);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* animation speed*/
+  transition: 0.5s;
+}
+
+.circle:hover {
+  background-color: #00ac56;
+}
+
+
+
+
+
+/* --- HR FORNATING --- */
+.strike {
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap; 
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 9px;
+    line-height: 20px;
+    color: var(--color2);
+}
+
+.strike > span {
+    position: relative;
+    display: inline-block;
+}
+
+.strike > span:before,
+.strike > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: var(--color2);
+}
+
+.strike > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+
+/* --- SET SLIDER BUTTON --- */
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--theme-Color);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--theme-Color);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+@media (max-width: 1600px) {
+  *{
+    --input-Width: 450px;
+  }
+}
+
+@media (max-width: 1450px) {
+  *{
+    --input-Width: 400px;
+  }
+}
+
+@media (max-width: 1250px) {
+  *{
+    --input-Width: 350px;
+  }
+}
+
+@media (max-width: 1100px) {
+  *{
+    --input-Width: 285px;
+  }
+}
+
+@media (max-width: 850px) {
+  *{
+    --input-Width: 222px;
+  }
+
+  .registration {
+    width: 62%;
+  }
+
+  .login {
+    width: 38%;
+  }
+}
+
+@media (max-width: 650px) {
+  *{
+    --input-Width: 190px;
+  }
+}

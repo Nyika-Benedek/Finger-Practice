@@ -35,6 +35,8 @@ body, html {
 }
 
 #bars {
+    display: flex;
+    align-items: center;
     flex-grow: 0;
 }
 
@@ -48,6 +50,7 @@ body, html {
     background-color: inherit;
     font-size: 46px;
     border: none;
+    overflow: hidden;
 }
 
 #img {
@@ -94,6 +97,7 @@ img {
 }
 
 /* --- HEADER 2 --- */
+
 .section1 {
     display: flex;
     align-items: center;
@@ -104,8 +108,8 @@ img {
 }
 
 #header2-detroit-pic {
-    width:72px;
-    height: 72px;
+    width:64px;
+    height: 64px;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -118,10 +122,21 @@ img {
 }
 
 .icon.icon-with-bg {
+    width: 72px;
+    height: 72px;
+    box-sizing: border-box;
     display: flex;
-    padding: 10px;
+    align-items: center;
+    justify-content: center;
     background-color: var(--color2);
     border-radius: 50%;
+
+    transition: .5s;
+}
+
+.icon.icon-with-bg:hover {
+    background-color:#53da2a;
+    cursor: pointer;
 }
 
 .section2 {
@@ -131,8 +146,16 @@ img {
     flex-grow: 1;
 }
 
+.section3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+}
+
 .search-container {
     position: relative;
+    flex-basis: 80%;
 }
 
 .search {
@@ -140,12 +163,11 @@ img {
     height: 80px;
     border-radius: 44px;
     background-color: var(--color3);
-    color: var(--color2);
+    color: var(--color);
+    font-weight: 700;
 
     border: none;
     outline: none;
-
-    padding: 19px;
     padding-left: 89px;
 
     font-family: 'Roboto', sans-serif;
@@ -184,33 +206,56 @@ img {
 .date-container {
     position: relative;
     height: 62px;
+    width: 250px;
     display: flex;
     flex-grow: 0;
 }
 
 .arrow-button {
     position:absolute;
-
+    color: #363636;
 }
 
 .arrow-button:hover{
+    color: black;
+    font-weight: bold;
     cursor: pointer;
 }
 
 #arrow1 {
     top: 50%;
-    left: 0;
+    left: 12px;
+    transform: translateY(-50%);
+}
+
+#arrow2 {
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+}
+
+#arrow3 {
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+}
+
+#arrow4 {
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
 }
 
 .date {
+    width: 100%;
+    height: 100%;
+    min-width: 220px;
+    display: flex;
     background-color: var(--color3);
     border-radius: 36px;
-    border: none;
-    text-align: center;
-    outline: none;
+    align-items: center;
+    justify-content: center;
 
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 20px;
     line-height: 22px;
@@ -234,9 +279,14 @@ img {
         justify-content: end;
     }
 
+
+    /* --- header2 --- */
+    .search-container {
+        flex-basis: 100%;
+    }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     body {
         font-size: 32px;
     }
@@ -244,6 +294,7 @@ img {
     .header {
         height: 40px;
         padding-left: 6px;
+        gap: 5px
     }
 
     .size-small {
@@ -278,5 +329,73 @@ img {
     #profile-pic {
         width: 32px;
         height: 32px;
+    }
+
+    /* --- HEADER2 --- */
+
+    .section1 {
+        gap: 5px;
+    }
+
+    .icon.icon-with-bg {
+        width: 40px;
+        height: 40px;
+    }
+
+    #header2-detroit-pic {
+        height: 36px;
+        width: 36px;
+    }
+    
+    #header2-profile-pic {
+        width: 36px;
+        height: 36px;
+    }
+
+    .search,.date {
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .search {
+        padding-left: 60px;
+    }
+
+    #search-icon {
+        font-size: 32px;
+        top: 5px
+    }
+
+    .vertical-line {
+        left: 55px;
+        height: 30px;
+    }
+
+    .section3 {
+        min-width: 115px;
+        max-width: 120px;
+    }
+    .date {
+        min-width: 115px;
+    }
+
+    .arrow-button {
+        font-size: 17px;
+    }
+
+    #arrow1 {
+        left: 2px;
+    }
+    
+    #arrow2 {
+        left: 16px;
+    }
+    
+    #arrow3 {
+        right: 16px;
+    }
+    
+    #arrow4 {
+        right: 2px;
     }
 }

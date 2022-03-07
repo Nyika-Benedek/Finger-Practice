@@ -1,4 +1,4 @@
-* {
+:root {
     --theme-Color: #006633;
     --color2: #55AE3A;
 }
@@ -8,6 +8,7 @@ body, html {
     margin: 0;
     padding: 0;
     position: relative;
+    font-family: 'Roboto', sans-serif;
 }
 
 .wrapper {
@@ -59,9 +60,7 @@ body, html {
     border-radius: 50%;
     display: inline-block;
     
-    margin: 0;
     margin-right: 4px;
-    padding: 0;
 
     display: flex;
     justify-content: center;
@@ -97,12 +96,8 @@ body, html {
 
 .name {
     width: 100%;
-    margin: 0;
     margin-bottom: 4px;
-    padding: 0;
 
-    font-family: Roboto;
-    font-style: normal;
     font-weight: bold;
     font-size: 28px;
     line-height: 33px;
@@ -110,9 +105,7 @@ body, html {
 }
 
 .profile {
-    margin: 0;
     margin-top: 3px;
-    padding: 0;
 
     display: flex;
     flex-flow: row wrap;
@@ -120,9 +113,8 @@ body, html {
 }
 
 .profile-Content {
-    margin: 0;
     margin-right: 45px;
-    padding: 0;
+    gap: 4px;
 
     width: max-content;
 
@@ -130,26 +122,19 @@ body, html {
     justify-content: left;
     align-items: center;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
 }
 .bs {
-    font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 21px;
-        text-align: justify;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: justify;
 }
 
 .button {
     width: 138px;
     height: 51px;
-    margin: 0;
     margin-top: 13px;
 
     background: var(--theme-Color);
@@ -171,8 +156,7 @@ body, html {
     /* text */
     /* Main / BUTTON Large */
 
-    font-family: Work Sans;
-    font-style: normal;
+    font-family: 'Work Sans', sans-serif;
     font-weight: bold;
     font-size: 16px;
     line-height: 19px;
@@ -193,9 +177,7 @@ body, html {
 }
 
 .button-Container {
-    margin: 0;
     margin-top: 29px;
-    padding: 0;
 
     display: flex;
     align-items: center;
@@ -257,9 +239,7 @@ body, html {
         width: 791px;
         height: 140px;
 
-        margin: 0;
         margin-top: 11px;
-        padding: 0;
 
         justify-content: flex-start;
         flex-flow: column wrap;
@@ -269,9 +249,6 @@ body, html {
         display: inline;
         margin-left: 5px;
 
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
         font-size: 18px;
         line-height: 21px;
         /* identical to box height */

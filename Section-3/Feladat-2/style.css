@@ -78,6 +78,11 @@ img {
     align-items: center;
 }
 
+.underline-content {
+    font-size: 30px;
+    line-height: 20px;
+}
+
 .underline-content:hover {
     text-decoration: underline;
 }

@@ -67,6 +67,9 @@ img {
     gap: 8px;
     justify-content: center;
     align-items: center;
+
+    font-size: 30px;
+    line-height: 20px;
 }
 
 .underline-content:hover {
@@ -87,7 +90,7 @@ img {
     overflow: hidden;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
     .size-big{
         display: none;
     }

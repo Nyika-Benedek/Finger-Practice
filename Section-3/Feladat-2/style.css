@@ -291,7 +291,7 @@ img {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
     body {
         font-size: 32px;
     }
@@ -364,6 +364,10 @@ img {
 
     .search {
         padding-left: 60px;
+    }
+
+    .search-container {
+        flex-basis: 98%;
     }
 
     #search-icon {

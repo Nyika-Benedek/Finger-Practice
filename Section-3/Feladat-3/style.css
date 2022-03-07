@@ -160,6 +160,13 @@ img {
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
+
+    transition: .5s;
+    cursor: pointer;
+}
+
+.listing-content > .content:hover {
+    background-color: #008643;
 }
 
 .bs {

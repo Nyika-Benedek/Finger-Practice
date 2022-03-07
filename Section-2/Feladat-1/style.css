@@ -127,12 +127,7 @@ html, body {
     background-color: rgb(35, 163, 35);
 }
 
-.button-icon {
-    transform: translate(0, -2px);
-}
-
 .at {
-    font-size: smaller;
     margin-top: 10px;
 
     font-size: 14px;

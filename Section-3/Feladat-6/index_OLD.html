@@ -2,23 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6cfaa4f627.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Feladat6</title>
 </head>
 <body>
-    <header>
-        <div class="header" id="header1"></div>
-        <div class="header" id="header2"></div>
-    </header>
+    <div class="wrapper">
+        <!-- header pattern -->
+        <div class="pattern"></div>
 
-    <div class="content">
-        <div class="grid">
+        <div class="conntent-Grid">
+
             <!-- Tartalom -->
             <div class="tartalom">
                 <h1>Tartalom</h1>
@@ -38,7 +33,7 @@
             </div>
 
             <!-- FEDEZZ FEL -->
-            <div class="fedezz-fel">
+            <div class="fedezz-Fel">
                 <h1>Fedezd fel</h1>
                 <ul>
                     <li>Szponzorált tartalom</li>
@@ -63,44 +58,42 @@
             <!-- Kovess minket -->
             <div class="kovess">
                 <h1>Kövess minket</h1>
-                <div class="button-container">
-                    <i class="fab fa-facebook-f icon"></i>
-                    <i class="fab fa-instagram icon"></i>
-                    <i class="fab fa-youtube icon"></i>
-                    <i class="fab fa-soundcloud icon"></i>
-                    <i class="fab fa-spotify icon"></i>
+                <div class="button-Container ">
+                    <i class="fab fa-facebook-f circle"></i>
+                    <i class="fab fa-instagram circle"></i>
+                    <i class="fab fa-youtube circle"></i>
+                    <i class="fab fa-soundcloud circle"></i>
+                    <i class="fab fa-spotify circle"></i>
                 </div>
             </div>
-        </div>
 
-        <!-- ADDVERTISEMENT -->
-        <div id="add">
+            <!-- ADDVERTISEMENT -->
             <img src="add.png" class="add" alt="addvertisement">
+
+            <!-- HÍRLEVÉL-->
+            <div class="hirlevel-Box">
+                <i class="far fa-envelope fa-3x icon"></i><a class="title">Hírlevél</a><br>
+                <input type="text" class="input-Text" placeholder="Név"><br>
+                <input type="text" class="input-Text" placeholder="E-mail cím"><br>
+                <!--input type="checkbox" class="inputCheckBox">Elfogadom az <a href="adatkezelesi tajekoztato.png">adatkezelési tájékoztatót.</a></input-->
+                <p class="AT small-Sight-Disappear"><input type="checkbox" id="checkb">Elfogadom az <a href="adatkezelesi tajekoztato.png" class="link">adatkezelési tájékoztatót.</a></p>
+                <button class="big-Button"><i class="fas fa-bell fa-xs button-Icon"></i> Felratkozás</button>
+            </div>
+
         </div>
 
-        <div class="div-box">
-            <div class="title-div">
-                <i class="far fa-envelope fa-3x icon"></i><span class="title">Hírlevél</span>
+        <div class="footer">
+            <div id="footer1">
+                <a href="NAL" class="link">Süti kezelés</a>
+                <a href="NAL" class="link">ÁSZF</a>
+                <a href="NAL" class="link">Adatvédelmi nyilatkozat</a>
             </div>
-            <div class="input-container">
-                <input type="text" name="name" class="input-text" placeholder="Név">
-                <input type="text" name="email" class="input-text" placeholder="E-mail cím">
-                <p class="at"><input type="checkbox" id="checkb">Elfogadom az <a href="adatkezelesi tajekoztato.png" class="link">adatkezelési tájékoztatót.</a></p>
+
+            <div id="footer2">
+                &copy; 2021 Büntető.com
             </div>
-            <button class="big-button"><i class="fas fa-bell fa-xs button-icon"></i> Feliratkozás</button>
         </div>
+
     </div>
-
-    <footer>
-        <div class="footer" id="footer1">
-            <a>Süti kezelés</a>
-            <a>ÁSZF</a>
-            <a>Adatvédelmi nyilatkozat</a>
-        </div>
-        <div class="footer" id="footer2">
-            <a>&copy;2021 Büntető.com</a>
-        </div>
-    </footer>
-    
 </body>
 </html>

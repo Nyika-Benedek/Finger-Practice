@@ -348,6 +348,12 @@ img {
         gap: 15px;
     }
 
+    .grid {
+        width: 400px;
+        align-content: space-around;
+        justify-content: space-between;
+    }
+
     .grid h1 {
         font-size: 14px;
         line-height: 16px;

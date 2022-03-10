@@ -38,7 +38,7 @@ html, body {
 .content > .grid {
     height: 400px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 150px 200px 120px;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
         "tartalom fedezz-fel rolunk"
@@ -50,6 +50,7 @@ html, body {
 
 .grid ul {
     list-style: none;
+    padding-left: 8px;
 }
 
 .grid h1 {
@@ -296,6 +297,10 @@ img {
         margin-top: 50px;
     }
 
+    .content > .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     .button-container > .icon {
         width: 60px;
         height: 60px;
@@ -366,6 +371,8 @@ img {
 
     .content > .grid {
         height: 200px;
+        padding: 0 10px;
+        row-gap: 2px;
     }
 
     .grid ul li:first-child{
@@ -414,7 +421,7 @@ img {
         margin-bottom: 6px;
     }
 
-    .footer {
+    .footer#footer1 {
         text-decoration-line: underline;
     }
 

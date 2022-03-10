@@ -31,14 +31,8 @@ html, body {
 }
 
 
-.horizontal-view {
+.horizontal-view, .vertical-view {
     display: none;
-    align-items: center;
-    justify-content: center;
-}
-
-.vertical-view {
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -243,8 +237,7 @@ img {
         justify-content: flex-start;
         align-items: center;
 
-        column-gap: 0;
-        row-gap: 8px;
+        gap: 8px;
     }
 
     .more-info {

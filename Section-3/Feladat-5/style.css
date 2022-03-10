@@ -86,6 +86,10 @@ img {
     overflow: hidden;
 }
 
+.card-medium #profile-pic {
+    border: 2px solid #55AE3A;
+}
+
 .card-medium .bs {
     padding: 0 8px;
     margin-bottom: 15px;

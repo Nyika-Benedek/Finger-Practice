@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Work+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6cfaa4f627.js" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+    <title>Feladat7</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <button class="icon" id="bars"><i class="fas fa-bars icon" ></i></button>
+            <button class="icon size-small" id="contact"><i class="far fa-comment-dots icon" ></i></button>
+            <div id="img">
+                <img id="img-content" src="icon.png">
+            </div>
+            <div class="button-container size-big">
+                <a class="underline"><i class="fas fa-microphone icon"></i><span class="underline-content">Interjúk</span></a>
+                <a class="underline"><i class="fas fa-portrait icon"></i><span class="underline-content">Portrék</span></a>
+                <a class="underline"><i class="fas fa-code-branch icon"></i><span class="underline-content">Elemzések</span></a>
+                <a class="underline"><i class="fas fa-book-reader icon"></i><span class="underline-content">Kultúra</span></a>
+            </div>
+
+            <!--a class="space"></a-->
+
+            <div class="options-container">
+                <button class="icon size-medium" id="search"><i class="fas fa-search icon "></i></button>
+                <button class="icon size-medium" id="comment"><i class="fas fa-comments icon "></i></button>
+                <button class="icon size-medium" id="bell"><i class="fas fa-bell icon "></i></button>
+                <button class="icon size-medium" id="help"><i class="fas fa-question-circle icon "></i></button>
+
+                <button class="icon" id="sliders"><i class="fas fa-sliders-h fa-rotate-270 icon profile"></i></button>
+                <button class="icon" id="profile-pic"><img src="profilePic.jpg" ></button>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="section1">
+                <i class="fas fa-football-ball fa-2x icon2 icon icon-with-bg"></i>
+                <button  class="icon icon-with-bg">
+                    <img src="dp.png" alt="detroit" id="header2-detroit-pic">
+                </button>
+                <button id="header2-profile-pic" class="icon">
+                    <img src="profilePic.jpg" alt="facial img" id="face">
+                </button>
+            </div>
+
+            <div class="section2">
+                <div class="search-container">
+                    <i class="fas fa-search icon" id="search-icon"></i>
+                    <div class="vertical-line"></div>
+                    <input type="search" class="search" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="section3 date-container">
+                <span id="arrow1" class="arrow-button">	&#8810;</span>
+                <span id="arrow2" class="arrow-button">&#60;</span>
+                <span class="date">2020/11/28</span>
+                <span id="arrow3" class="arrow-button">&#62;</span>
+                <span id="arrow4" class="arrow-button">&#8811;</span>
+            </div>
+
+            <div class="section4">
+                <button class="icon icon-with-bg"><i class="far fa-newspaper fa-2x bg paper icon"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div>
+            <div class="profile-wrapper">
+
+                <div class="profile">
+                    <div id="profile-pic">
+                        <img src="profilePic.jpg" alt="profile picture" class="img">
+                    </div>
+                    <p id="name">Próba Péter</p>
+                    <p id="nickname">Peti</p>
+                </div>
+        
+                <div class="personal-data">
+                    <div class="headline">
+                        <div class="sloping-frame">
+                            <i class="far fa-address-card icon"></i>
+                            <span class="content">Személyes adatok</span>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fas fa-birthday-cake icon"></i>
+                        <span class="content">1994. május 4.</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-home icon"></i>
+                        <span class="content">Magyarország</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-male icon"></i>
+                        <span class="content">Férfi</span>
+                    </div>
+                </div>
+        
+                <div class="contact-information">
+                    <div class="headline">
+                        <div class="sloping-frame">
+                            <i class="far fa-id-badge icon"></i>
+                            <span class="content">Elérhetőségek</span>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone-alt icon"></i>
+                        <span class="content">+36-30/12-34-567</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope icon"></i>
+                        <span class="content">probapeter@gmail.com</span>
+                    </div>
+                    
+                </div>
+        
+                <div class="sports">
+                    <div class="headline">
+                        <div class="sloping-frame">
+                            <i class="far fa-futbol icon"></i>
+                            <span class="content">Kedvenc sportok</span>
+                        </div>
+                    </div>
+                    <div class="listing-content">
+                        <div class="content">
+                            <i class="fas fa-basketball-ball icon"></i>
+                            <span class="content">Kosárlabda</span>
+                        </div>
+                        <div class="content">
+                            <i class="far fa-futbol icon"></i>
+                            <span class="content">Football</span>
+                        </div>
+                        <div class="content">
+                            <i class="fas fa-golf-ball icon"></i>
+                            <span class="content">Golf</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="intrests">
+                    <div class="headline">
+                        <div class="sloping-frame">
+                            <i class="fas fa-map-marked-alt icon"></i>
+                            <span class="content">Sportesemények itt érdekelnek</span>
+                        </div>
+                    </div>
+                    <div class="listing-content">
+                        <span class="content">Budapest</span>
+                        <span class="content">Szolnok</span>
+                        <span class="content">Debrecen</span>
+                        <span class="content">Magyarország</span>
+                        <span class="content">Franciaország</span>
+                    </div>
+                </div>
+        
+                <div class="introduction">
+                    <div class="headline">
+                        <div class="sloping-frame">
+                            <i class="fas fa-portrait icon"></i>
+                            <span class="content">Bemutatkozás</span>
+                        </div>
+                    </div>
+                    <p class="bs">
+                        Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibu debitis aut rerum necessitatibus saepe eveniet perfere asperoio riodontndis doloribus asperior es fraloove fe vepellat. Temporibus autem quibu debitis aut rerum necessitatibus saepe eveniet perfere asperoio riodontndis doloribus asperior es repellat.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+        <div class="headline">
+            <div class="sloping-frame">
+                <i class="fa fa-regular fa-bookmark icon"></i> Péter által mentett cikkek
+            </div>
+        </div>
+        <div class="card card-medium">
+            <div id="card-img">
+                <img src="Sport.jpg" class="img" alt="sport">
+            </div>
+            <div class="content">
+                <div class="title">
+                    <div id="profile-pic">
+                        <img src="profilePic.jpg" alt="profile picture">
+                    </div>
+                    <span class="content">AZ ÉV EGYIK LEGMEGHATÁRO-
+                        ZÓBB MÉRKŐZÉSE A 21 SZÁZAdban, amit soha nem fogunk elfelejteni
+                    </span>
+                </div>
+                <div class="bs">
+                    energistically deploy technically sound bandwidth interactively administrate global human capital rapidiously productivate cloud-ready infomediaries professionally unleash client-centered sprints, appropriately synthesize prospective growth strategies, proactively productivate intuitive initiatives, intrinsically harness maintainable ideas, holisticly simplify enterprise-wide expertise, completely synergize cooperative nosql, compellingly conceptualize resource-maximizing "outside the box" thinking, dynamically restore cross-media users
+                </div>
+                <div class="headline">
+                    <div class="sloping-frame">
+                        <i class="fas fa-running icon"></i>Sport
+                    </div>
+    
+                    <div class="ago">
+                        <i class="far fa-clock icon"></i>6 min
+                    </div>
+    
+                    <div class="date">
+                        2021.03.04.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-small">
+            <div id="card-img">
+                <img src="Sport.jpg" class="img" alt="sport">
+            </div>
+            <div class="content">
+                <div class="title">
+                    <div id="profile-pic">
+                        <img src="profilePic.jpg" alt="profile picture">
+                    </div>
+                    <span class="content">AZ ÉV EGYIK LEGMEGHATÁRO-
+                        ZÓBB MÉRKŐZÉSE A 21 SZÁZAdban, amit soha nem fogunk elfelejteni
+                    </span>
+                </div>
+                <div class="bs">
+                    energistically deploy technically sound bandwidth interactively administrate global human capital rapidiously productivate cloud-ready infomediaries professionally unleash client-centered sprints, appropriately synthesize prospective growth strategies, proactively productivate intuitive initiatives, intrinsically harness maintainable ideas, holisticly simplify enterprise-wide expertise, completely synergize cooperative nosql, compellingly conceptualize resource-maximizing "outside the box" thinking, dynamically restore cross-media users
+                </div>
+                <div class="headline">
+                    <div class="sloping-frame">
+                        <i class="fas fa-running icon"></i>Sport
+                    </div>
+    
+                    <div class="ago">
+                        <i class="far fa-clock icon"></i>6 min
+                    </div>
+    
+                    <div class="date">
+                        2021.03.04.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-small">
+            <div id="card-img">
+                <img src="Sport.jpg" class="img" alt="sport">
+            </div>
+            <div class="content">
+                <div class="title">
+                    <div id="profile-pic">
+                        <img src="profilePic.jpg" alt="profile picture">
+                    </div>
+                    <span class="content">AZ ÉV EGYIK LEGMEGHATÁRO-
+                        ZÓBB MÉRKŐZÉSE A 21 SZÁZAdban, amit soha nem fogunk elfelejteni
+                    </span>
+                </div>
+                <div class="bs">
+                    energistically deploy technically sound bandwidth interactively administrate global human capital rapidiously productivate cloud-ready infomediaries professionally unleash client-centered sprints, appropriately synthesize prospective growth strategies, proactively productivate intuitive initiatives, intrinsically harness maintainable ideas, holisticly simplify enterprise-wide expertise, completely synergize cooperative nosql, compellingly conceptualize resource-maximizing "outside the box" thinking, dynamically restore cross-media users
+                </div>
+                <div class="headline">
+                    <div class="sloping-frame">
+                        <i class="fas fa-running icon"></i>Sport
+                    </div>
+    
+                    <div class="ago">
+                        <i class="far fa-clock icon"></i>6 min
+                    </div>
+    
+                    <div class="date">
+                        2021.03.04.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-small">
+            <div id="card-img">
+                <img src="Sport.jpg" class="img" alt="sport">
+            </div>
+            <div class="content">
+                <div class="title">
+                    <div id="profile-pic">
+                        <img src="profilePic.jpg" alt="profile picture">
+                    </div>
+                    <span class="content">AZ ÉV EGYIK LEGMEGHATÁRO-
+                        ZÓBB MÉRKŐZÉSE A 21 SZÁZAdban, amit soha nem fogunk elfelejteni
+                    </span>
+                </div>
+                <div class="bs">
+                    energistically deploy technically sound bandwidth interactively administrate global human capital rapidiously productivate cloud-ready infomediaries professionally unleash client-centered sprints, appropriately synthesize prospective growth strategies, proactively productivate intuitive initiatives, intrinsically harness maintainable ideas, holisticly simplify enterprise-wide expertise, completely synergize cooperative nosql, compellingly conceptualize resource-maximizing "outside the box" thinking, dynamically restore cross-media users
+                </div>
+                <div class="headline">
+                    <div class="sloping-frame">
+                        <i class="fas fa-running icon"></i>Sport
+                    </div>
+    
+                    <div class="ago">
+                        <i class="far fa-clock icon"></i>6 min
+                    </div>
+    
+                    <div class="date">
+                        2021.03.04.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-small">
+            <div id="card-img">
+                <img src="Sport.jpg" class="img" alt="sport">
+            </div>
+            <div class="content">
+                <div class="title">
+                    <div id="profile-pic">
+                        <img src="profilePic.jpg" alt="profile picture">
+                    </div>
+                    <span class="content">AZ ÉV EGYIK LEGMEGHATÁRO-
+                        ZÓBB MÉRKŐZÉSE A 21 SZÁZAdban, amit soha nem fogunk elfelejteni
+                    </span>
+                </div>
+                <div class="bs">
+                    energistically deploy technically sound bandwidth interactively administrate global human capital rapidiously productivate cloud-ready infomediaries professionally unleash client-centered sprints, appropriately synthesize prospective growth strategies, proactively productivate intuitive initiatives, intrinsically harness maintainable ideas, holisticly simplify enterprise-wide expertise, completely synergize cooperative nosql, compellingly conceptualize resource-maximizing "outside the box" thinking, dynamically restore cross-media users
+                </div>
+                <div class="headline">
+                    <div class="sloping-frame">
+                        <i class="fas fa-running icon"></i>Sport
+                    </div>
+    
+                    <div class="ago">
+                        <i class="far fa-clock icon"></i>6 min
+                    </div>
+    
+                    <div class="date">
+                        2021.03.04.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-small">
+            <div id="card-img">
+                <img src="Sport.jpg" class="img" alt="sport">
+            </div>
+            <div class="content">
+                <div class="title">
+                    <div id="profile-pic">
+                        <img src="profilePic.jpg" alt="profile picture">
+                    </div>
+                    <span class="content">AZ ÉV EGYIK LEGMEGHATÁRO-
+                        ZÓBB MÉRKŐZÉSE A 21 SZÁZAdban, amit soha nem fogunk elfelejteni
+                    </span>
+                </div>
+                <div class="bs">
+                    energistically deploy technically sound bandwidth interactively administrate global human capital rapidiously productivate cloud-ready infomediaries professionally unleash client-centered sprints, appropriately synthesize prospective growth strategies, proactively productivate intuitive initiatives, intrinsically harness maintainable ideas, holisticly simplify enterprise-wide expertise, completely synergize cooperative nosql, compellingly conceptualize resource-maximizing "outside the box" thinking, dynamically restore cross-media users
+                </div>
+                <div class="headline">
+                    <div class="sloping-frame">
+                        <i class="fas fa-running icon"></i>Sport
+                    </div>
+    
+                    <div class="ago">
+                        <i class="far fa-clock icon"></i>6 min
+                    </div>
+    
+                    <div class="date">
+                        2021.03.04.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="headline">
+            <div class="sloping-frame">
+                <i class="far fa-clock icon"></i> Utoljára olvasott cikkek
+            </div>
+        </div>
+
+        <div class="card card-wide">
+            <div id="card-img">
+                <img src="Sport.jpg" class="img" alt="sport">
+            </div>
+            <div class="content">
+                <div class="title">
+                    <div id="profile-pic">
+                        <img src="profilePic.jpg" alt="profile picture">
+                    </div>
+                    <span class="content">AZ ÉV EGYIK LEGMEGHATÁRO-
+                        ZÓBB MÉRKŐZÉSE A 21 SZÁZAdban, amit soha nem fogunk elfelejteni
+                    </span>
+                </div>
+                <div class="bs">
+                    energistically deploy technically sound bandwidth interactively administrate global human capital rapidiously productivate cloud-ready infomediaries professionally unleash client-centered sprints, appropriately synthesize prospective growth strategies, proactively productivate intuitive initiatives, intrinsically harness maintainable ideas, holisticly simplify enterprise-wide expertise, completely synergize cooperative nosql, compellingly conceptualize resource-maximizing "outside the box" thinking, dynamically restore cross-media users
+                </div>
+                <div class="headline">
+                    <div class="sloping-frame">
+                        <i class="fas fa-running icon"></i>Sport
+                    </div>
+    
+                    <div class="ago">
+                        <i class="far fa-clock icon"></i>6 min
+                    </div>
+    
+                    <div class="date">
+                        2021.03.04.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-small">
+            <div id="card-img">
+                <img src="Sport.jpg" class="img" alt="sport">
+            </div>
+            <div class="content">
+                <div class="title">
+                    <div id="profile-pic">
+                        <img src="profilePic.jpg" alt="profile picture">
+                    </div>
+                    <span class="content">AZ ÉV EGYIK LEGMEGHATÁRO-
+                        ZÓBB MÉRKŐZÉSE A 21 SZÁZAdban, amit soha nem fogunk elfelejteni
+                    </span>
+                </div>
+                <div class="bs">
+                    energistically deploy technically sound bandwidth interactively administrate global human capital rapidiously productivate cloud-ready infomediaries professionally unleash client-centered sprints, appropriately synthesize prospective growth strategies, proactively productivate intuitive initiatives, intrinsically harness maintainable ideas, holisticly simplify enterprise-wide expertise, completely synergize cooperative nosql, compellingly conceptualize resource-maximizing "outside the box" thinking, dynamically restore cross-media users
+                </div>
+                <div class="headline">
+                    <div class="sloping-frame">
+                        <i class="fas fa-running icon"></i>Sport
+                    </div>
+    
+                    <div class="ago">
+                        <i class="far fa-clock icon"></i>6 min
+                    </div>
+    
+                    <div class="date">
+                        2021.03.04.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-wide">
+            <div id="card-img">
+                <img src="Sport.jpg" class="img" alt="sport">
+            </div>
+            <div class="content">
+                <div class="title">
+                    <div id="profile-pic">
+                        <img src="profilePic.jpg" alt="profile picture">
+                    </div>
+                    <span class="content">AZ ÉV EGYIK LEGMEGHATÁRO-
+                        ZÓBB MÉRKŐZÉSE A 21 SZÁZAdban, amit soha nem fogunk elfelejteni
+                    </span>
+                </div>
+                <div class="bs">
+                    energistically deploy technically sound bandwidth interactively administrate global human capital rapidiously productivate cloud-ready infomediaries professionally unleash client-centered sprints, appropriately synthesize prospective growth strategies, proactively productivate intuitive initiatives, intrinsically harness maintainable ideas, holisticly simplify enterprise-wide expertise, completely synergize cooperative nosql, compellingly conceptualize resource-maximizing "outside the box" thinking, dynamically restore cross-media users
+                </div>
+                <div class="headline">
+                    <div class="sloping-frame">
+                        <i class="fas fa-running icon"></i>Sport
+                    </div>
+    
+                    <div class="ago">
+                        <i class="far fa-clock icon"></i>6 min
+                    </div>
+    
+                    <div class="date">
+                        2021.03.04.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-small">
+            <div id="card-img">
+                <img src="Sport.jpg" class="img" alt="sport">
+            </div>
+            <div class="content">
+                <div class="title">
+                    <div id="profile-pic">
+                        <img src="profilePic.jpg" alt="profile picture">
+                    </div>
+                    <span class="content">AZ ÉV EGYIK LEGMEGHATÁRO-
+                        ZÓBB MÉRKŐZÉSE A 21 SZÁZAdban, amit soha nem fogunk elfelejteni
+                    </span>
+                </div>
+                <div class="bs">
+                    energistically deploy technically sound bandwidth interactively administrate global human capital rapidiously productivate cloud-ready infomediaries professionally unleash client-centered sprints, appropriately synthesize prospective growth strategies, proactively productivate intuitive initiatives, intrinsically harness maintainable ideas, holisticly simplify enterprise-wide expertise, completely synergize cooperative nosql, compellingly conceptualize resource-maximizing "outside the box" thinking, dynamically restore cross-media users
+                </div>
+                <div class="headline">
+                    <div class="sloping-frame">
+                        <i class="fas fa-running icon"></i>Sport
+                    </div>
+    
+                    <div class="ago">
+                        <i class="far fa-clock icon"></i>6 min
+                    </div>
+    
+                    <div class="date">
+                        2021.03.04.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-wide">
+            <div id="card-img">
+                <img src="Sport.jpg" class="img" alt="sport">
+            </div>
+            <div class="content">
+                <div class="title">
+                    <div id="profile-pic">
+                        <img src="profilePic.jpg" alt="profile picture">
+                    </div>
+                    <span class="content">AZ ÉV EGYIK LEGMEGHATÁRO-
+                        ZÓBB MÉRKŐZÉSE A 21 SZÁZAdban, amit soha nem fogunk elfelejteni
+                    </span>
+                </div>
+                <div class="bs">
+                    energistically deploy technically sound bandwidth interactively administrate global human capital rapidiously productivate cloud-ready infomediaries professionally unleash client-centered sprints, appropriately synthesize prospective growth strategies, proactively productivate intuitive initiatives, intrinsically harness maintainable ideas, holisticly simplify enterprise-wide expertise, completely synergize cooperative nosql, compellingly conceptualize resource-maximizing "outside the box" thinking, dynamically restore cross-media users
+                </div>
+                <div class="headline">
+                    <div class="sloping-frame">
+                        <i class="fas fa-running icon"></i>Sport
+                    </div>
+    
+                    <div class="ago">
+                        <i class="far fa-clock icon"></i>6 min
+                    </div>
+    
+                    <div class="date">
+                        2021.03.04.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-small">
+            <div id="card-img">
+                <img src="Sport.jpg" class="img" alt="sport">
+            </div>
+            <div class="content">
+                <div class="title">
+                    <div id="profile-pic">
+                        <img src="profilePic.jpg" alt="profile picture">
+                    </div>
+                    <span class="content">AZ ÉV EGYIK LEGMEGHATÁRO-
+                        ZÓBB MÉRKŐZÉSE A 21 SZÁZAdban, amit soha nem fogunk elfelejteni
+                    </span>
+                </div>
+                <div class="bs">
+                    energistically deploy technically sound bandwidth interactively administrate global human capital rapidiously productivate cloud-ready infomediaries professionally unleash client-centered sprints, appropriately synthesize prospective growth strategies, proactively productivate intuitive initiatives, intrinsically harness maintainable ideas, holisticly simplify enterprise-wide expertise, completely synergize cooperative nosql, compellingly conceptualize resource-maximizing "outside the box" thinking, dynamically restore cross-media users
+                </div>
+                <div class="headline">
+                    <div class="sloping-frame">
+                        <i class="fas fa-running icon"></i>Sport
+                    </div>
+    
+                    <div class="ago">
+                        <i class="far fa-clock icon"></i>6 min
+                    </div>
+    
+                    <div class="date">
+                        2021.03.04.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

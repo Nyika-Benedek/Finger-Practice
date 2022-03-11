@@ -367,11 +367,11 @@ img {
     }
 
     #header1 {
-        background-image: url(patternSmall1);
+        background-image: url(patternSmall2);
     }
 
     #header2 {
-        background-image: url(patternSmall2);
+        background-image: url(patternSmall1);
     }
 
     footer>.content {

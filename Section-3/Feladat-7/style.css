@@ -376,7 +376,7 @@ header .date {
         height: 36px;
     }
 
-    header .search,.date {
+    header .search, header .date {
         height: 40px;
         font-size: 12px;
     }
@@ -941,6 +941,38 @@ body .card-container > .headline {
 }
 
 
+/* ------------------------ */
+/* --- FLOATING BUTTONS --- */
+/* ------------------------ */
+body .content .button-container {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 350px;
+}
+
+body .content .button-container .icon {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color);
+    color: white;
+    font-size: 46px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+body .content .button-container .icon:hover {
+    background-color: #008542;
+}
+
+
 /* -------------- */
 /* --- FOOTER --- */
 /* -------------- */
@@ -1032,9 +1064,10 @@ footer #add {
     height: 360px;
 }
 
-footer .button-container {
+footer .kovess .button-container {
     margin-top: 5px;
     display: flex;
+    flex-direction: row;
     gap: 8px;
 }
 

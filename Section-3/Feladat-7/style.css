@@ -33,6 +33,17 @@ body > .content > :first-child {
 }
 
 
+/* ------------------------------ */
+/* --- UPGRADED SLOPING FRAME --- */
+/* ------------------------------ */
+.sloping-frame {
+    transform: skew(-35deg);
+}
+
+.sloping-frame * {
+    transform: skew(35deg);
+}
+
 
 /* -------------- */
 /* --- HEADER --- */
@@ -526,34 +537,10 @@ header .date {
     align-items: center;
     justify-content: center;
     margin: auto;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
     gap: 6px;
     background-color: white;
-}
-
-.profile-wrapper .sloping-frame::before {
-    position: absolute;
-    width: 0;
-	height: 0;
-	border-left: 19px solid transparent;
-	border-bottom: 33px solid white;
-    top: 0px;
-    right: 100%;
-    z-index: 0;
-    content: "";
-}
-
-.profile-wrapper .sloping-frame::after {
-    position: absolute;
-    width: 0;
-	height: 0;
-	border-right: 19px solid transparent;
-	border-top: 33px solid white;
-    top: 0;
-    left: 100%;
-    z-index: 0;
-    content: "";
 }
 
 .profile-wrapper .icon {
@@ -632,7 +619,8 @@ body .card-container > :first-child > .headline .sloping-frame {
     font-weight: 900;
     font-size: 32px;
     line-height: 38px;
-    padding-left: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
 
     gap: 12px;
 }
@@ -650,9 +638,15 @@ body .card-container > .headline {
     font-weight: 900;
     font-size: 32px;
     line-height: 38px;
-    padding-left: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
 
     gap: 12px;
+}
+
+.card > .content > .headline > .sloping-frame {
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .card-container > :nth-child(3) {
@@ -888,28 +882,6 @@ body .card-container > .headline {
     line-height: 20px;
 }
 
-.card-container .sloping-frame::before {
-    position: absolute;
-    width: 0;
-	height: 0;
-	border-left: 20px solid transparent;
-	border-bottom: 38px solid white;
-    left: -20px;
-    z-index: 0;
-    content: "";
-}
-
-.card-container .sloping-frame::after {
-    position: absolute;
-    width: 0;
-	height: 0;
-	border-right: 20px solid transparent;
-	border-top: 38px solid white;
-    left: 100%;
-    z-index: 0;
-    content: "";
-}
-
 .card-container .ago,
 .card-container .views {
     display: flex;
@@ -951,6 +923,12 @@ body .content .button-container {
     justify-content: flex-start;
     align-items: center;
     gap: 350px;
+}
+
+body .content .button-container .content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 body .content .button-container .icon {

@@ -13,14 +13,12 @@
 body, html {
     height: 100%;
     position: relative;
-}
-
-body, html {
     font-size: larger;
     font-family: 'Roboto', sans-serif;
 }
 
 body > .content {
+    padding-top: 15px;
     display: flex;
     flex-direction: row;
 }
@@ -28,7 +26,6 @@ body > .content {
 body > .content > :first-child {
     width: 45%;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -438,7 +435,7 @@ header .date {
     width: 460px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     align-items: center;
     gap: 22px;
 
@@ -602,14 +599,21 @@ header .date {
 /* ---------------------- */
 /* --- CARD CONTAINER --- */
 /* ---------------------- */
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 60px repeat(3, 1fr) 60px repeat(3, 1fr);
+body .card-container {
+    width: 950px;
+    display: flex;
+    flex-direction: column;
     gap: 15px;
 }
 
-body .card-container > .headline {
+.card-container > :first-child {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 60px repeat(3, 1fr);
+    gap: 15px;
+}
+
+body .card-container > :first-child > .headline {
     grid-column: auto / span 3;
     width: 100%;
     height: 100%;
@@ -620,7 +624,7 @@ body .card-container > .headline {
     font-size: 32px;
 }
 
-body .card-container > .headline .sloping-frame {
+body .card-container > :first-child > .headline .sloping-frame {
     box-sizing: border-box;
     font-weight: 900;
     font-size: 32px;
@@ -628,6 +632,37 @@ body .card-container > .headline .sloping-frame {
     padding-left: 4px;
 
     gap: 12px;
+}
+
+body .card-container > .headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 57px;
+}
+
+.card-container > .headline .sloping-frame {
+    box-sizing: border-box;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 38px;
+    padding-left: 4px;
+
+    gap: 12px;
+}
+
+.card-container > :nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.card-container > :nth-child(3) > :first-child,
+.card-container > :nth-child(3) > :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .card-container .card {
@@ -765,14 +800,13 @@ body .card-container > .headline .sloping-frame {
 
 /* --- WIDE CARD --- */
 .card-container .card.card-wide {
-    grid-column: span 2;
-    grid-column: span .5;
+
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
 
     width: 100%;
-    height: 100%;
+    height: 177px;
 }
 
 .card-container .card-wide #card-img {

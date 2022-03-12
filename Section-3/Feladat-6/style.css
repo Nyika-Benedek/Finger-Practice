@@ -19,11 +19,11 @@ html, body {
     width: 100%;
 }
 
-#header1 {
+.header:first-child {
     background-image: url(patternBig1);
 }
 
-#header2 {
+.header:nth-child(2) {
     background-image: url(patternBig2);
 }
 
@@ -55,7 +55,7 @@ a {
 
 .grid ul {
     list-style: none;
-    padding-left: 20px;
+    padding-left: 24px;
 }
 
 .grid h1 {
@@ -303,11 +303,11 @@ img {
         height: 46px;
     }
 
-    #header1 {
+    .header:first-child {
         background-image: url(patternMedium1);
     }
 
-    #header2 {
+    .header:nth-child(2) {
         background-image: url(patternMedium2);
     }
 
@@ -366,11 +366,11 @@ img {
         height: 19px;
     }
 
-    #header1 {
+    .header:first-child {
         background-image: url(patternSmall2);
     }
 
-    #header2 {
+    .header:nth-child(2) {
         background-image: url(patternSmall1);
     }
 
@@ -401,8 +401,12 @@ img {
         row-gap: 2px;
     }
 
+    .grid ul {
+        padding-left: 12px;
+    }
     .grid ul li:first-child{
         margin-top: 5px;
+        
     }
 
     .button-container {

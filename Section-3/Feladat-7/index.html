@@ -35,7 +35,7 @@
                 <button class="icon size-medium" id="bell"><i class="fas fa-bell icon "></i></button>
                 <button class="icon size-medium" id="help"><i class="fas fa-question-circle icon "></i></button>
 
-                <button class="icon" id="sliders"><i class="fas fa-sliders-h fa-rotate-270 icon profile"></i></button>
+                <button class="icon" id="sliders"><i class="fas fa-sliders-h icon profile"></i></button>
                 <button class="icon" id="profile-pic"><img src="profilePic.jpg" ></button>
             </div>
         </div>
@@ -552,14 +552,23 @@
             </div>
         </div>
         </div>
-        <div class="button-container">
-            <div class="content">
-                <button class="icon"><i class="fa fa-solid fa-bookmark "></i></button>
-            </div>
+        <div>
+            <div class="button-container">
+                <div class="content">
+                    <!-- Rounded switch -->
+                    <label class="switch">
+                        <i class="fa-solid fa-folder switch-state"></i>
+                        <i class="fa-solid fa-id-card-clip switch-state"></i>
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <button class="icon"><i class="fa fa-solid fa-bookmark "></i></button>
+                </div>
 
-            <div class="content">
-                <button class="icon"><i class="fa fa-solid fa-gear"></i></button>
-                <button class="icon"><i class=" fa-solid fa-circle-question"></i></button>
+                <div class="content">
+                    <button class="icon"><i class="fa fa-solid fa-gear"></i></button>
+                    <button class="icon"><i class=" fa-solid fa-circle-question"></i></button>
+                </div>
             </div>
         </div>
     </div>
@@ -654,5 +663,36 @@
             </div>
         </div>
     </footer>
+
+
+
+    <script>
+    const mediumCards =  document.getElementsByClassName("card-medium")
+    const smallCards =  document.getElementsByClassName("card-small")
+    function responsivity()
+    {
+        console.log(window.innerWidth)
+        if (window.innerWidth < 1600) {
+            for (const obj of mediumCards) {
+                obj.className = ".card .card-small"
+            }
+        }
+
+        /*if (window.innerWidth > 1600) {
+            for (const obj of mediumCards) {
+                obj.className = ".card .card-medium"
+            }
+        }*/
+
+        console.log(window.innerWidth)
+        if (window.innerWidth < 740) {
+            for (const obj of smallCards) {
+                obj.className = ".card .card-small"
+            }
+        }
+    }
+    responsivity()
+    window.addEventListener('resize', responsivity);
+    </script>
 </body>
 </html>

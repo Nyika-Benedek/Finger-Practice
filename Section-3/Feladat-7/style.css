@@ -27,7 +27,6 @@ body > .content {
 }
 
 body > .content > :first-child {
-    width: 45%;
     display: flex;
     justify-content: center;
 }
@@ -471,7 +470,6 @@ header .date {
 /* --------------- */
 .profile-wrapper {
     position: relative;
-    border: 1px solid black;
 
     width: 460px;
     display: flex;
@@ -1565,7 +1563,6 @@ footer .footer > .content:nth-child(2) {
     body .card-container {
         width: 100%;
         margin: auto;
-        padding-top: 15px;
     }
 
     body > .content > :nth-child(3) {
@@ -1577,6 +1574,19 @@ footer .footer > .content:nth-child(2) {
     }
     body > .content > :nth-child(3) > .button-container {
         position: sticky;
+    }
+
+    body > .content > :first-child {
+        flex-direction: column;
+    }
+
+
+    .profile-wrapper {
+        width: 90%;
+    }
+
+    .card-container {
+        width: 90%;
     }
 }
 
@@ -1641,7 +1651,7 @@ footer .footer > .content:nth-child(2) {
         margin: 0;
     }
 }
-
+/*
 @media(max-width: 740px) {
     body > .content > :first-child {
         justify-content: left;
@@ -1689,4 +1699,15 @@ footer .footer > .content:nth-child(2) {
         align-items: center;
         justify-content: center;
     }
+}*/
+
+body > .content {
+    display: flex;
+    flex-direction: row;
+}
+
+body > .content > :first-child > :first-child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

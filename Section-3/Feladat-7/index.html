@@ -668,13 +668,13 @@
 
     <script>
     const mediumCards =  document.getElementsByClassName("card-medium")
-    const smallCards =  document.getElementsByClassName("card-small")
+    const wideCards =  document.getElementsByClassName("card-wide")
     function responsivity()
     {
         console.log(window.innerWidth)
         if (window.innerWidth < 1600) {
             for (const obj of mediumCards) {
-                obj.className = ".card .card-small"
+                obj.className = "card card-small"
             }
         }
 
@@ -686,8 +686,8 @@
 
         console.log(window.innerWidth)
         if (window.innerWidth < 740) {
-            for (const obj of smallCards) {
-                obj.className = ".card .card-small"
+            for (const obj of wideCards) {
+                obj.className = "card card-small"
             }
         }
     }

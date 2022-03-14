@@ -15,9 +15,9 @@
 <body>
     <header>
         <div class="header">
-            <button class="icon" id="bars"><i class="fas fa-bars icon" ></i></button>
+            <button class="icon" id="bars"><i class="fas fa-bars" ></i></button>
             <button class="icon size-small" id="contact"><i class="far fa-comment-dots icon" ></i></button>
-            <div id="img">
+            <div id="logo">
                 <img id="img-content" src="icon.png">
             </div>
             <div class="button-container size-big">
@@ -30,10 +30,10 @@
             <!--a class="space"></a-->
 
             <div class="options-container">
-                <button class="icon size-medium" id="search"><i class="fas fa-search icon "></i></button>
-                <button class="icon size-medium" id="comment"><i class="fas fa-comments icon "></i></button>
-                <button class="icon size-medium" id="bell"><i class="fas fa-bell icon "></i></button>
-                <button class="icon size-medium" id="help"><i class="fas fa-question-circle icon "></i></button>
+                <button class="icon size-medium" id="search"><i class="fas fa-search  "></i></button>
+                <button class="icon size-medium" id="comment"><i class="fas fa-comments  "></i></button>
+                <button class="icon size-medium" id="bell"><i class="fas fa-bell  "></i></button>
+                <button class="icon size-medium" id="help"><i class="fas fa-question-circle  "></i></button>
 
                 <button class="icon" id="sliders"><i class="fas fa-sliders-h icon profile"></i></button>
                 <button class="icon" id="profile-pic"><img src="profilePic.jpg" ></button>
@@ -42,7 +42,7 @@
 
         <div class="header">
             <div class="section1">
-                <i class="fas fa-football-ball fa-2x icon2 icon icon-with-bg"></i>
+                <button class="fas fa-football-ball fa-2x icon2 icon icon-with-bg"></button>
                 <button  class="icon icon-with-bg">
                     <img src="dp.png" alt="detroit" id="header2-detroit-pic">
                 </button>
@@ -676,7 +676,7 @@
     function responsivity()
     {
         console.log(window.innerWidth)
-        if (window.innerWidth < 1600) {
+        if (window.innerWidth < 1700) {
             for (const obj of mediumCards) {
                 obj.className = "card card-small"
             }

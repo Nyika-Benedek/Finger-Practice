@@ -23,14 +23,15 @@ body > .content {
     padding-top: 15px;
     padding-bottom: 45px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: right;
     flex-direction: row;
 }
 
 body > .content > :first-child {
     display: flex;
     justify-content: center;
-    column-gap: 20px;
+    column-gap: 10%;
+    margin: auto;
 }
 
 
@@ -58,7 +59,7 @@ header .header {
 
     display: flex;
     align-items: center;
-    justify-content: start;
+
     
     gap: 16px;
     padding-left: 16px;
@@ -72,21 +73,25 @@ header .header {
 
 .header .icon:not(.size-big * ):hover {
     color: rgb(168, 168, 168);
-    transition: .5s;
 }
 
 header #bars {
     display: flex;
     align-items: center;
     flex-grow: 0;
+    flex-shrink: 0;
 }
 
-header .size-small {
+header .icon.size-small {
     flex-grow: 0;
     display: none;
 }
 
 header .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     color: white;
     background-color: inherit;
     font-size: 46px;
@@ -98,7 +103,7 @@ header #sliders {
     transform: rotate(270deg);
 }
 
-header #img {
+header #logo {
     width: 200px;
     height: 40px;
 }
@@ -110,10 +115,9 @@ header img {
 }
 
 header .button-container {
-    flex-grow: 5;
     display: flex;
     align-items: center;
-    gap: 32px
+    gap: 32px;
 }
 
 header .underline {
@@ -137,12 +141,8 @@ header .options-container {
     align-items: center;
     gap: 16px;
     flex-grow: 0;
-}
-
-header .options-container > * {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: auto;
+    margin-right: 0;
 }
 
 header #profile-pic{
@@ -163,15 +163,9 @@ header .section1 {
     gap: 24px;
 }
 
-header #header2-detroit-pic {
+header #header2-detroit-pic,
+ header #header2-profile-pic {
     width:64px;
-    height: 64px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-header #header2-profile-pic {
-    width: 64px;
     height: 64px;
     border-radius: 50%;
     overflow: hidden;
@@ -207,6 +201,10 @@ header .section3 {
     align-items: center;
     justify-content: center;
     flex-grow: 0;
+
+    position: relative;
+    height: 62px;
+    width: 250px;
 }
 
 header .search-container {
@@ -220,7 +218,6 @@ header .search {
     border-radius: 44px;
     background-color: var(--color3);
     color: var(--color);
-    font-weight: 700;
 
     border: none;
     outline: none;
@@ -244,7 +241,8 @@ header #search-icon {
 
     position: absolute;
 
-    top: 16px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 14px;
 }
 
@@ -259,17 +257,13 @@ header .vertical-line {
     top: 4px;
 }
 
-header .date-container {
-    position: relative;
-    height: 62px;
-    width: 250px;
-    display: flex;
-    flex-grow: 0;
-}
-
 header .arrow-button {
     position:absolute;
     color: #363636;
+
+    top: 50%;
+
+    transform: translateY(-50%);
 }
 
 header .arrow-button:hover{
@@ -278,35 +272,20 @@ header .arrow-button:hover{
     cursor: pointer;
 }
 
-header #arrow1, 
-header #arrow2,
-header #arrow3,
-header #arrow4 {
-    top: 50%;
-
-    transform: translateY(-50%);
-}
-
 header #arrow1 {
     left: 12px;
 }
 
 header #arrow2 {
-    top: 50%;
     left: 40px;
-    transform: translateY(-50%);
 }
 
 header #arrow3 {
-    top: 50%;
     right: 40px;
-    transform: translateY(-50%);
 }
 
 header #arrow4 {
-    top: 50%;
     right: 12px;
-    transform: translateY(-50%);
 }
 
 header .date {
@@ -328,17 +307,14 @@ header .date {
 
 /* --- MEDIA QUERRIES -- */
 
-@media (max-width: 1300px) {
+@media (max-width: 1500px) {
     header .size-big{
         display: none;
     }
 
-    header #bars {
-        flex-grow: 0.1;
-    }
-
     header .options-container {
-        flex-grow: 5;
+        margin: auto;
+        margin-right: 0;
         justify-content: end;
     }
 
@@ -360,7 +336,7 @@ header .date {
         gap: 5px
     }
 
-    header .size-small {
+    header .icon.size-small {
         display: flex;
     }
 
@@ -372,7 +348,7 @@ header .date {
         font-size: 32px;
     }
 
-    header #img {
+    header #logo {
         display: flex;
         flex-grow: 1;
         justify-content: center;
@@ -430,7 +406,8 @@ header .date {
 
     header #search-icon {
         font-size: 32px;
-        top: 5px
+        top: 5px;
+        transform: unset;
     }
 
     header .vertical-line {
@@ -471,8 +448,6 @@ header .date {
 /* --- PROFILE --- */
 /* --------------- */
 .profile-wrapper {
-    position: relative;
-
     width: 460px;
     display: flex;
     flex-direction: column;
@@ -484,7 +459,6 @@ header .date {
     padding-bottom: 12px;
 
     color: var(--theme-Color);
-    font-family: 'Roboto', sans-serif;
 }
 
 .profile-wrapper .profile {
@@ -529,11 +503,7 @@ header .date {
     content: ")";
 }
 
-.profile-wrapper .personal-data,
-.profile-wrapper .contact-information,
-.profile-wrapper .sports,
-.profile-wrapper .intrests,
-.profile-wrapper .introduction {
+.profile-wrapper > *:not(.profile) {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -640,7 +610,8 @@ body .card-container > :first-child > .headline {
     font-size: 32px;
 }
 
-body .card-container > :first-child > .headline .sloping-frame {
+body .card-container > :first-child > .headline .sloping-frame,
+.card-container > .headline .sloping-frame {
     box-sizing: border-box;
     font-weight: 900;
     font-size: 32px;
@@ -659,16 +630,7 @@ body .card-container > .headline {
     height: 57px;
 }
 
-.card-container > .headline .sloping-frame {
-    box-sizing: border-box;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 38px;
-    padding-left: 24px;
-    padding-right: 24px;
 
-    gap: 12px;
-}
 
 .card > .content > .headline > .sloping-frame {
     padding-left: 12px;
@@ -681,8 +643,7 @@ body .card-container > .headline {
     gap: 20px;
 }
 
-.card-container > :nth-child(3) > :first-child,
-.card-container > :nth-child(3) > :nth-child(2) {
+.card-container > :nth-child(3) > * {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -948,7 +909,6 @@ body > .content .button-container {
     
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     gap: 350px;
 
@@ -1553,7 +1513,7 @@ footer .footer > .content:nth-child(2) {
 
 /* --- END OF SLIDER BUTTON --- */
 
-@media(max-width: 1200px) {
+@media(max-width: 1300px) {
     body > .content {
         flex-direction: column;
     }
@@ -1593,7 +1553,7 @@ footer .footer > .content:nth-child(2) {
 }
 
 
-@media(max-width: 1600px) {
+@media(max-width: 1700px) {
     .card-container > :first-child {
         width: 100%;
         display: grid;
@@ -1601,13 +1561,9 @@ footer .footer > .content:nth-child(2) {
         grid-template-rows: 60px repeat(auto-fit, minmax(250px,300px));
         gap: 15px;
     }
-}
 
-@media(max-width: 1500px) {
     .card-container > :nth-child(3) {
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 
     body .card-container > :first-child {
@@ -1624,22 +1580,12 @@ footer .footer > .content:nth-child(2) {
 
     body .card-container > :nth-child(2) {
         width: 612px;
-        margin: auto;
     }
 
     .card-container > :nth-child(3) > :nth-child(2) {
         flex-direction: row;
     }
 }
-
-
-
-
-
-
-
-
-
 
 /* --- IDK PART --- */
 
@@ -1805,7 +1751,6 @@ body > .content {
 body > .content > :first-child > :first-child {
     width: 100%;
     display: flex;
-    justify-content: center;
 }
 
 body > .content .button-container .content > * {

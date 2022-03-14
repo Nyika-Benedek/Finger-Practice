@@ -186,7 +186,7 @@
                     <i class="fa fa-regular fa-bookmark icon"></i> <span>Péter által mentett cikkek</span>
                 </div>
             </div>
-            <div class="card card-medium">
+            <div class="card card-medium medium">
                 <div id="card-img">
                     <img src="Sport.jpg" class="img" alt="sport">
                 </div>
@@ -389,7 +389,7 @@
 
         <div>
             <div>
-                <div class="card card-wide">
+                <div class="card card-wide wide">
                     <div id="card-img">
                         <img src="Sport.jpg" class="img" alt="sport">
                     </div>
@@ -421,7 +421,7 @@
                     </div>
                 </div>
 
-                <div class="card card-wide">
+                <div class="card card-wide wide">
                     <div id="card-img">
                         <img src="Sport.jpg" class="img" alt="sport">
                     </div>
@@ -453,7 +453,7 @@
                     </div>
                 </div>
 
-                <div class="card card-wide">
+                <div class="card card-wide wide">
                     <div id="card-img">
                         <img src="Sport.jpg" class="img" alt="sport">
                     </div>
@@ -671,27 +671,34 @@
 
 
     <script>
-    const mediumCards =  document.getElementsByClassName("card-medium")
-    const wideCards =  document.getElementsByClassName("card-wide")
     function responsivity()
     {
+        const mediumCards =  document.getElementsByClassName("medium")
+        const wideCards =  document.getElementsByClassName("wide")
         console.log(window.innerWidth)
         if (window.innerWidth < 1700) {
             for (const obj of mediumCards) {
-                obj.className = "card card-small"
+                obj.className = "card card-small medium"
             }
         }
 
-        /*if (window.innerWidth > 1600) {
+        if (window.innerWidth > 1700) {
             for (const obj of mediumCards) {
-                obj.className = ".card .card-medium"
+                obj.className = "card card-medium medium"
             }
-        }*/
+        }
 
         console.log(window.innerWidth)
         if (window.innerWidth < 800) {
             for (const obj of wideCards) {
-                obj.className = "card card-small"
+                obj.className = "card card-small wide"
+            }
+        }
+
+        console.log(window.innerWidth)
+        if (window.innerWidth > 800) {
+            for (const obj of wideCards) {
+                obj.className = "card card-wide wide"
             }
         }
     }

@@ -588,17 +588,17 @@
                 <div class="tartalom">
                     <h1>Tartalom</h1>
                     <ul>
-                        <li><a href="#">Sportágak</a></li>
-                        <li><a href="#">Euro 2021</a></li>
-                        <li><a href="#">Rovatok</a></li>
-                        <li><a href="#">Portrék</a></li>
-                        <li><a href="#">Toplisták</a></li>
-                        <li><a href="#">Történelem</a></li>
-                        <li><a href="#">Kultúra</a></li>
-                        <li><a href="#">Podcast</a></li>
-                        <li><a href="#">Interjúk</a></li>
-                        <li><a href="#">Elemzések</a></li>
-                        <li><a href="#">Saját profil</a></li>
+                        <li><a href="#" class="underline-content">Sportágak</a></li>
+                        <li><a href="#" class="underline-content">Euro 2021</a></li>
+                        <li><a href="#" class="underline-content">Rovatok</a></li>
+                        <li><a href="#" class="underline-content">Portrék</a></li>
+                        <li><a href="#" class="underline-content">Toplisták</a></li>
+                        <li><a href="#" class="underline-content">Történelem</a></li>
+                        <li><a href="#" class="underline-content">Kultúra</a></li>
+                        <li><a href="#" class="underline-content">Podcast</a></li>
+                        <li><a href="#" class="underline-content">Interjúk</a></li>
+                        <li><a href="#" class="underline-content">Elemzések</a></li>
+                        <li><a href="#" class="underline-content">Saját profil</a></li>
                     </ul>
                 </div>
 
@@ -606,11 +606,11 @@
                 <div class="fedezz-fel">
                     <h1>Fedezd fel</h1>
                     <ul>
-                        <li><a href="#">Szponzorált tartalom</a></li>
-                        <li><a href="#">Kiemelt cikkek</a></li>
-                        <li><a href="#">Szerzői profilok</a></li>
-                        <li><a href="#">Fórum</a></li>
-                        <li><a href="#">Chat</a></li>
+                        <li><a href="#" class="underline-content">Szponzorált tartalom</a></li>
+                        <li><a href="#" class="underline-content">Kiemelt cikkek</a></li>
+                        <li><a href="#" class="underline-content">Szerzői profilok</a></li>
+                        <li><a href="#" class="underline-content">Fórum</a></li>
+                        <li><a href="#" class="underline-content">Chat</a></li>
                     </ul>
                 </div>
 
@@ -618,10 +618,10 @@
                 <div class="rolunk">
                     <h1>Rólunk</h1>
                     <ul>
-                        <li><a href="#">Impresszum</a></li>
-                        <li><a href="#">Szerzői jogok</a></li>
-                        <li><a href="#">Csapat</a></li>
-                        <li><a href="#">Kapcsolat</a></li>
+                        <li><a href="#" class="underline-content">Impresszum</a></li>
+                        <li><a href="#" class="underline-content">Szerzői jogok</a></li>
+                        <li><a href="#" class="underline-content">Csapat</a></li>
+                        <li><a href="#" class="underline-content">Kapcsolat</a></li>
                     </ul>
                 </div>
 
@@ -658,12 +658,12 @@
 
         <div class="footer">
             <div class="content">
-                <a href="#">Süti kezelés</a>
-                <a href="#">ÁSZF</a>
-                <a href="#">Adatvédelmi nyilatkozat</a>
+                <a href="#" class="underline-content">Süti kezelés</a>
+                <a href="#" class="underline-content">ÁSZF</a>
+                <a href="#" class="underline-content">Adatvédelmi nyilatkozat</a>
             </div>
             <div class="content">
-                <a href="#">&copy;2021 Büntető.com</a>
+                <a href="#" class="underline-content">&copy;2021 Büntető.com</a>
             </div>
         </div>
     </footer>
@@ -681,8 +681,7 @@
                 obj.className = "card card-small medium"
             }
         }
-
-        if (window.innerWidth > 1700) {
+        else {
             for (const obj of mediumCards) {
                 obj.className = "card card-medium medium"
             }
@@ -694,9 +693,7 @@
                 obj.className = "card card-small wide"
             }
         }
-
-        console.log(window.innerWidth)
-        if (window.innerWidth > 800) {
+        else {
             for (const obj of wideCards) {
                 obj.className = "card card-wide wide"
             }

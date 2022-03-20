@@ -3,17 +3,22 @@
 <meta charset=utf-8 />
 <title>Return first and last name from a form - w3resource</title>
 </head><body>
-<form id="form1" onsubmit="getFormvalue()">
+<form action="#" id="form1" onsubmit="getFormvalue(); return false">
 First name: <input type="text" name="fname" value="David"><br>
 Last name: <input type="text" name="lname" value="Beckham"><br>
 <input type="submit" value="Submit">
 </form>
 </body>
 <script>
+    let form = document.forms[0]
+
+
     function getFormvalue() {
-        let fname = document.getElementsByName("fname");
-        let lname = document.getElementsByName("lname");
-        fullName = fname[0].value.concat(" " + lname[0].value);
+        let names = form.querySelectorAll("input");
+        /*
+        let fname = form.children.getElementsByName("fname");
+        let lname = document.getElementsByName("lname");*/
+        fullName = names[0].value.concat(" " + names[1].value);
         console.log(fullName);
         return fullName;
     }

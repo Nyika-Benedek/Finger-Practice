@@ -9,19 +9,21 @@ body {margin: 30px;}
 </head><body>
 <table id="myTable" border="1">
 </table><form>
-<input type="button" onclick="createTable(2, 2, 'content')" value="Create the table">
+<input type="button" onclick="createTable('content')" value="Create the table">
 </form></body>
 <script>
-    function createTable(i, j, content) {
+    function createTable(content) {
+        let i = window.prompt("Input number of rows", 1);
+        let j = window.prompt("Input number of columns", 1)
         let table = document.createElement('table');
         let tbody = document.createElement('tbody');
         table.appendChild(tbody);
 
         for(let x = 0; x < j; x++) {
             let row = table.insertRow()
-            for (let x = 0; x < j; x++) {
+            for (let y = 0; y < j; y++) {
                 cell = row.insertCell();
-                cell.innerHTML = content;
+                cell.innerHTML = `Row ${x+1} Cell ${y+1}`;
             }
         }
         document.getElementsByTagName('body')[0].appendChild(table);

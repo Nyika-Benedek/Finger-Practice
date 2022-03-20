@@ -18,8 +18,12 @@ Select your favorite Color :
 </body>
 <script>
     function getOptions() {
-        let select = document.getElementById("mySelect");
-        alert(select.children.length);
+        let select = Array.from(document.getElementById("mySelect").children);
+        let out = "";
+        for (let i = 0; i < select.length; i++) {
+            out += (`${i}:  ${select[i].innerHTML}; `);
+        }
+        alert(out);
     }
 </script>
 </html>
